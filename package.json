@@ -1,0 +1,28 @@
+{
+  "name": "streetsheettheme",
+  "version": "1.0.0",
+  "description": "A Sassy Underscores-based theme for Street Sheet",
+  "main": "index.php",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crystal2cross/streetsheettheme"
+  },
+  "keywords": [
+    "sass",
+    "grunt",
+    "autoprefixer",
+    "underscores",
+    "wordpress"
+  ],
+  "author": "Crystal Cross",
+  "bugs": {
+    "url": "https://github.com/crystal2cross/streetsheettheme/issues"
+  },
+  "homepage": "https://github.com/crystal2cross/streetsheettheme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
