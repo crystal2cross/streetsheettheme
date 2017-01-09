@@ -1,10 +1,10 @@
 /*!
 Theme Name: Street Sheet Theme
-Theme URI: http://underscores.me/
+Theme URI: https://github.com/crystal2cross/streetsheettheme
 Author: Crystal Cross
-Author URI: http://www.streetsheet.org/
+Author URI: https://www.linkedin.com/in/crystalcross
 Description: A Sassy Underscores-based theme for Street Sheet
-Version: 1.0.0
+Version: 0.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: streetsheettheme
@@ -265,14 +265,42 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Merriweather", serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Fira Sans", sans-serif;
   clear: both;
+  line-height: 1.3em;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.4em;
+}
+
+h2 {
+  font-size: 2.2em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.8em;
+}
+
+h5 {
+  font-size: 1.6em;
+}
+
+h6 {
+  font-size: 1.4em;
 }
 
 p {
@@ -649,21 +677,17 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
-.site-content {
-  display: -ms-flexbox;
-  display: flex;
+/*.site-content {
+	display: flex;
 }
 
 .content-area {
-  -ms-flex: 2;
-      flex: 2;
+	flex: 2;
 }
 
 .site-content widget-area {
-  -ms-flex: 1;
-      flex: 1;
-}
-
+	flex: 1;
+}*/
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
@@ -707,6 +731,36 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Global
+--------------------------------------------------------------*/
+.site-content {
+  font-size: 1.125em;
+  line-height: 1.6em;
+}
+
+.site-main {
+  margin: 1.4em;
+  font-size: .8em;
+  line-height: 1.6em;
+}
+
+@media screen and (min-width: 30em) {
+  .site-main {
+    margin: 1.8em;
+  }
+}
+@media screen and (min-width: 40em) {
+  .site-main {
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 57em) {
+  .site-main {
+    max-width: 45em;
+    margin: 1.8em auto;
+  }
+}
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
