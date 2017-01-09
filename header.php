@@ -24,6 +24,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'streetsheettheme' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
+            
 		<div class="site-branding">
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
@@ -40,9 +41,23 @@
 			endif; ?>
 		</div><!-- .site-branding -->
 
+                <?php // Display site logo ?>
+		<div class="site-logo">
+			<?php $site_title = get_bloginfo( 'name' ); ?>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+				<div class="screen-reader-text">
+					<?php printf( esc_html__('Go to the home page of %1$s', 'Street Sheet'), $site_title ); ?>
+				</div>
+				<?php
+				if ( has_custom_logo() ) {
+					the_custom_logo();
+				} ?>
+			</a>
+		</div>
+                
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'streetsheettheme' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'streetsheettheme' ); ?></button>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'menu_class' => 'nav-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 

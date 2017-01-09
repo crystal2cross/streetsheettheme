@@ -34,6 +34,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Alignments
 # Layouts
 # Clearings
+# Header
 # Widgets
 # Content
 	## Posts and pages
@@ -90,6 +91,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Clearings
 --------------------------------------------------------------*/
 @import "modules/clearings";
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+@import "site/primary/header";
 
 /*--------------------------------------------------------------
 # Widgets

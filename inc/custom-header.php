@@ -21,11 +21,18 @@
  * @uses streetsheettheme_header_style()
  */
 function streetsheettheme_custom_header_setup() {
+        add_theme_support( 'custom-logo', array(
+            'width' => 266,
+            'height' => 113,
+            'flex-width' => false,
+            'flex-height' => false,
+        ) );
+    
 	add_theme_support( 'custom-header', apply_filters( 'streetsheettheme_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
-		'width'                  => 1000,
-		'height'                 => 250,
+		'width'                  => 250,
+		'height'                 => 100,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'streetsheettheme_header_style',
 	) ) );

@@ -107,8 +107,15 @@ function streetsheettheme_scripts() {
         // Add Google fonts: Fira Sans and Merriweather
         wp_enqueue_style( 'streetsheettheme-google-fonts', 'https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700,700i|Merriweather:400,400i,700,700i');
         
-	wp_enqueue_script( 'streetsheettheme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-
+        // Add FontAwesome
+        wp_enqueue_script( 'streetsheettheme-fontawesome', 'https://use.fontawesome.com/f3b26de71f.js' );
+        
+	wp_enqueue_script( 'streetsheettheme-navigation', get_template_directory_uri() . '/js/navigation.js', array( 'jquery' ), '20151215', true );
+        wp_localize_script( 'streetsheettheme-navigation', 'screenReaderText', array(
+		'expand'   => '<span class="screen-reader-text">' . __( 'expand child menu', 'streetsheet' ) . '</span>',
+		'collapse' => '<span class="screen-reader-text">' . __( 'collapse child menu', 'streetsheet' ) . '</span>',
+	) );
+        
 	wp_enqueue_script( 'streetsheettheme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
