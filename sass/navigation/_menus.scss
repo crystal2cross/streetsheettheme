@@ -346,3 +346,30 @@
         text-decoration: underline;
     }
 }
+
+.back-link-container {
+    font-family: 'FontAwesome';
+    color: #008EAC;
+    padding-bottom: .5em;
+    &:before {
+        content: "\f100";
+        font-size: 14px;
+        line-height: 27px;
+        position: relative;
+        top: 0;
+        bottom: 1px;
+        left: 1px;
+        width: 27px;
+    } 
+}
+
+.back-link {
+    font-family: $font__headings;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+}
