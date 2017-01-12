@@ -24,12 +24,12 @@ function streetsheettheme_post_date() {
 		esc_html( get_the_modified_date() )
 	);
 
-	$post_date = sprintf(
-		esc_html_x( '%s', 'post date', 'streetsheettheme' ),
-		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
-	);  
+//	$post_date = sprintf(
+//		esc_html_x( '%s', 'post date', 'streetsheettheme' ),
+//		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
+//	);  
         
-        echo '<span class="post-date">' . $post_date . '</span>';
+        echo '<span class="post-date">' . $time_string . '</span>';
 }
 endif;
 
@@ -121,7 +121,7 @@ function streetsheettheme_categorized_blog() {
  * Customize the excerpt read-more indicator
  */
 function streetsheettheme_excerpt_more( $more ) {
-    return ' ... <a href="' . esc_url( get_permalink() ) . '">READ MORE</a>';
+    return ' ... <a class="read-more-link" href="' . esc_url( get_permalink() ) . '">READ MORE</a>';
 }
 add_filter( 'excerpt_more', 'streetsheettheme_excerpt_more' );
 

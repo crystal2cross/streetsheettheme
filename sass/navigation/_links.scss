@@ -17,3 +17,15 @@ a {
 		outline: 0;
 	}
 }
+
+.site-info {
+    a {
+        color: #24C3E4;
+        text-decoration: none;
+	&:hover,
+	&:focus,
+	&:active {
+            text-decoration: underline;
+	}
+    }
+}

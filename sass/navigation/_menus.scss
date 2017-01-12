@@ -26,17 +26,17 @@
 .main-navigation a {
 	position: relative;
 	display: block;
-	padding: 0.8em 1em;
+	padding: 0.7em 1em;
 	font-weight: 400;
 	text-decoration: none;
 	line-height: 1.6em;
-	color: white;
+	color: #fff;
 }
 
 .main-navigation a:hover,
 .main-navigation a:focus {
-	background: #fff;
-	color: #000;
+	background: #008EAC;
+	color: #fff;
 }
 
 .main-navigation a,
@@ -109,8 +109,8 @@
 
 .dropdown-toggle:hover,
 .dropdown-toggle:focus {
-	background-color: #fff;
-	color: #000;
+	background-color: #008EAC;
+	color: #fff;
 }
 
 .dropdown-toggle.toggle-on:after {
@@ -148,7 +148,7 @@
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 @media screen and (min-width: 50em) {
@@ -245,17 +245,17 @@
 	/* Add an outline on hovered and focused menu items */
 	.main-navigation a:hover,
 	.main-navigation a:focus {
-		background: transparent;
+		background: #008EAC;
 		color: #fff;
-		text-decoration: underline;
-		outline: solid 1px #b3b3b3;
+		text-decoration: none;
+		outline: solid 1px #008EAC;
 	}
 	
 	/* Create hover and focus contrast on drop-down items */
 	.main-navigation li li a:hover,
 	.main-navigation li li a:focus {
-		background: #eee;
-		color: #000;
+		background: #008EAC;
+		color: #fff;
 		text-decoration: none;
 	}
 	

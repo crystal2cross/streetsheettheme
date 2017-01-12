@@ -520,19 +520,27 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue;
+  color: #008EAC;
 }
 a:visited {
-  color: purple;
+  color: #008EAC;
 }
 a:hover, a:focus, a:active {
-  color: midnightblue;
+  color: #008EAC;
 }
 a:focus {
   outline: thin dotted;
 }
 a:hover, a:active {
   outline: 0;
+}
+
+.site-info a {
+  color: #24C3E4;
+  text-decoration: none;
+}
+.site-info a:hover, .site-info a:focus, .site-info a:active {
+  text-decoration: underline;
 }
 
 /*--------------------------------------------------------------
@@ -566,17 +574,17 @@ a:hover, a:active {
 .main-navigation a {
   position: relative;
   display: block;
-  padding: 0.8em 1em;
+  padding: 0.7em 1em;
   font-weight: 400;
   text-decoration: none;
   line-height: 1.6em;
-  color: white;
+  color: #fff;
 }
 
 .main-navigation a:hover,
 .main-navigation a:focus {
-  background: #fff;
-  color: #000;
+  background: #008EAC;
+  color: #fff;
 }
 
 .main-navigation a,
@@ -650,8 +658,8 @@ a:hover, a:active {
 
 .dropdown-toggle:hover,
 .dropdown-toggle:focus {
-  background-color: #fff;
-  color: #000;
+  background-color: #008EAC;
+  color: #fff;
 }
 
 .dropdown-toggle.toggle-on:after {
@@ -688,7 +696,7 @@ a:hover, a:active {
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 50em) {
@@ -781,17 +789,17 @@ a:hover, a:active {
   /* Add an outline on hovered and focused menu items */
   .main-navigation a:hover,
   .main-navigation a:focus {
-    background: transparent;
+    background: #008EAC;
     color: #fff;
-    text-decoration: underline;
-    outline: solid 1px #b3b3b3;
+    text-decoration: none;
+    outline: solid 1px #008EAC;
   }
 
   /* Create hover and focus contrast on drop-down items */
   .main-navigation li li a:hover,
   .main-navigation li li a:focus {
-    background: #eee;
-    color: #000;
+    background: #008EAC;
+    color: #fff;
     text-decoration: none;
   }
 
@@ -1394,6 +1402,17 @@ a:hover, a:active {
   margin: 0 0 1.5em;
 }
 
+.byline {
+  color: #999;
+}
+.byline a {
+  text-decoration: none;
+  color: #999;
+}
+.byline a:hover, .byline a:focus {
+  text-decoration: underline;
+}
+
 .byline,
 .updated:not(.published) {
   display: none;
@@ -1414,6 +1433,17 @@ a:hover, a:active {
 .entry-title {
   margin-top: 0;
   margin-bottom: 0;
+  font-style: italic;
+}
+.entry-title a {
+  text-decoration: none;
+}
+.entry-title a:hover, .entry-title a:focus {
+  text-decoration: underline;
+}
+
+.entry-meta {
+  color: #000;
 }
 
 .entry-content {
@@ -1428,6 +1458,15 @@ a:hover, a:active {
 .post {
   background-color: #fff;
   padding: 1em;
+}
+
+.read-more-link {
+  font-family: "Fira Sans", sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+.read-more-link:hover, .read-more-link:focus {
+  text-decoration: underline;
 }
 
 /*--------------------------------------------------------------
