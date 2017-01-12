@@ -161,3 +161,34 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+// FLEXSLIDER
+
+function streetsheet_flexslider() {
+	if (!is_admin()) {
+
+		// Enqueue FlexSlider JavaScript
+		wp_register_script('jquery_flexslider', get_template_directory_uri(). '/js/jquery.flexslider-min.js', array('jquery') );
+		wp_enqueue_script('jquery_flexslider');
+
+		// Enqueue FlexSlider Stylesheet		
+		wp_register_style( 'flexslider-style', get_template_directory_uri() . '/compiled/flexslider.css', 'all' );
+		wp_enqueue_style( 'flexslider-style' );
+		
+		// FlexSlider custom settings		
+		add_action('wp_footer', 'streetsheet_flexslider_settings');
+		
+		function streetsheet_flexslider_settings() { ?>			
+			<script>
+				jQuery(document).ready(function($){
+
+					$('.flexslider').flexslider();
+				});
+			</script>
+		<?php 
+		}
+
+	}
+}
+
+add_action('init', 'streetsheet_flexslider');

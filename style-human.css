@@ -536,7 +536,7 @@ a:hover, a:active {
 }
 
 .site-info a {
-  color: #24C3E4;
+  color: #fff;
   text-decoration: none;
 }
 .site-info a:hover, .site-info a:focus, .site-info a:active {
@@ -695,6 +695,8 @@ a:hover, a:active {
 .menu-toggle:hover,
 .menu-toggle:focus {
   text-decoration: none;
+  background-color: #008EAC;
+  color: #fff;
 }
 
 @media screen and (min-width: 50em) {
@@ -711,7 +713,7 @@ a:hover, a:active {
   position: fixed;
   bottom: 0;
   padding: 1em;
-  z-index: 1;
+  z-index: 3;
 }
 .main-navigation.toggled > .nav-menu {
   padding: 1em;
@@ -808,7 +810,7 @@ a:hover, a:active {
     display: block;
     z-index: 10;
     margin-left: 0;
-    background: #000;
+    background: #008EAC;
   }
 
   .main-navigation ul ul ul.toggled-on {

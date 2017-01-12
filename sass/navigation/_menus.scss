@@ -149,6 +149,8 @@
 .menu-toggle:hover,
 .menu-toggle:focus {
 	text-decoration: none;
+        background-color: #008EAC;
+        color: #fff;
 }
 
 @media screen and (min-width: 50em) {
@@ -166,7 +168,7 @@
 	position: fixed;
 	bottom: 0;
 	padding: 1em;
-	z-index: 1;
+	z-index: 3;
         
         & > .nav-menu {
             padding: 1em;
@@ -266,7 +268,7 @@
 		display: block;
 		z-index: 10;
 		margin-left: 0;
-		background: #000;
+		background: #008EAC;
 	}
 	
 	.main-navigation ul ul ul.toggled-on {
