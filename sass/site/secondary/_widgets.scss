@@ -4,7 +4,6 @@
 
 .widget {
     background-color: #fff;
-    padding: 1em;
     margin-bottom: 1em;
 
     /* Make sure select elements fit in widgets. */
@@ -14,13 +13,17 @@
     
     .widget-title {
         margin-top: 0px;
-        font-size: 1.4em;
+        font-size: 1em;
+        font-weight: normal;
+        background-color: #000;
+        color: #fff;
+        padding: .5em 1em;
     }
 }
 
 .widget ul,
 .widget ol {
-	padding: 0;
+	padding: 0 1em .5em 1em;
 	margin: 0;
 	font-family: "Fira Sans", sans-serif;
 	list-style-type: none;
@@ -48,7 +51,7 @@
 }
 
 .widget a {
-	font-weight: 700;
+	font-weight: bold;
 	text-decoration: none;
 	font-size: .9em;
 }
@@ -133,10 +136,14 @@
 	padding: .5em 0;
 	font-family: "Merriweather", serif;
 	font-size: .8em;
-    line-height: 1.4em;
+        line-height: 1.4em;
 }
 
 /* Search widget */
+
+.widget_search {
+        padding: 1em;
+}
 
 .widget_search input[type="search"] {
 	box-sizing: border-box;
