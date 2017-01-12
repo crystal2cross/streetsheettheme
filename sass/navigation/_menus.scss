@@ -304,6 +304,17 @@
 .post-navigation .nav-previous {
 	float: left;
 	width: 50%;
+        font-family: 'FontAwesome';
+        color: #008EAC;
+        &:before {
+            content: "\f177";
+            font-size: 14px;
+            line-height: 27px;
+            position: relative;
+            top: 0;
+            left: 1px;
+            width: 27px;
+        }
 }
 
 .comment-navigation .nav-next,
@@ -312,4 +323,26 @@
 	float: right;
 	text-align: right;
 	width: 50%;
+        font-family: 'FontAwesome';
+        color: #008EAC;
+        &:after {
+            content: "\f178";
+            font-size: 14px;
+            line-height: 27px;
+            position: relative;
+            top: 0;
+            left: 1px;
+            width: 27px;
+        }
+}
+
+.nav-links a {
+    font-family: $font__headings;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
 }

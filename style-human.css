@@ -844,6 +844,19 @@ a:hover, a:active {
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
+  font-family: 'FontAwesome';
+  color: #008EAC;
+}
+.comment-navigation .nav-previous:before,
+.posts-navigation .nav-previous:before,
+.post-navigation .nav-previous:before {
+  content: "\f177";
+  font-size: 14px;
+  line-height: 27px;
+  position: relative;
+  top: 0;
+  left: 1px;
+  width: 27px;
 }
 
 .comment-navigation .nav-next,
@@ -852,6 +865,29 @@ a:hover, a:active {
   float: right;
   text-align: right;
   width: 50%;
+  font-family: 'FontAwesome';
+  color: #008EAC;
+}
+.comment-navigation .nav-next:after,
+.posts-navigation .nav-next:after,
+.post-navigation .nav-next:after {
+  content: "\f178";
+  font-size: 14px;
+  line-height: 27px;
+  position: relative;
+  top: 0;
+  left: 1px;
+  width: 27px;
+}
+
+.nav-links a {
+  font-family: "Fira Sans", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.nav-links a:hover, .nav-links a:focus {
+  text-decoration: underline;
 }
 
 /*--------------------------------------------------------------
