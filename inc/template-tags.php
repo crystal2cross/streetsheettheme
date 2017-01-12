@@ -118,6 +118,14 @@ function streetsheettheme_categorized_blog() {
 }
 
 /**
+ * Customize the excerpt read-more indicator
+ */
+function streetsheettheme_excerpt_more( $more ) {
+    return ' ... <a href="' . esc_url( get_permalink() ) . '">READ MORE</a>';
+}
+add_filter( 'excerpt_more', 'streetsheettheme_excerpt_more' );
+
+/**
  * Flush out the transients used in streetsheettheme_categorized_blog.
  */
 function streetsheettheme_category_transient_flusher() {

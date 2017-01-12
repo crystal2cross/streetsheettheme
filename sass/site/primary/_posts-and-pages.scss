@@ -16,15 +16,26 @@
 	display: inline;
 }
 
-.page-content,
-.entry-content,
-.entry-summary {
-	margin: 1.5em 0 0;
+@media screen and (max-width: 50em) {
+    .page-content,
+    .entry-content,
+    .entry-summary {
+            margin: 1em 0 0;
+    }
 }
 
+.entry-title {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.entry-content {
+    margin-bottom: -25px;
+}
+    
 .page-links {
-	clear: both;
-	margin: 0 0 1.5em;
+    clear: both;
+    margin: 0 0 1.5em;
 }
 
 .post {

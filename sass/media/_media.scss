@@ -14,6 +14,18 @@ object {
 	max-width: 100%;
 }
 
+.post-thumbnail {
+    float: right;
+    height: auto;
+}
+
+@media screen and (min-width: 50em) {
+    .attachment-custom_thumb {
+        margin-left: 10px;
+        width: 12em;
+    }
+}
+
 /*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/

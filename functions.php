@@ -41,7 +41,8 @@ function streetsheettheme_setup() {
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
-
+        add_image_size( 'custom_thumb', 9999, 9999, false);
+        
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'streetsheettheme' ),
@@ -123,6 +124,18 @@ function streetsheettheme_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'streetsheettheme_scripts' );
+
+function streetsheet_excerpt_thumbnail( $excerpt ){
+    if( is_single() ) return $excerpt;
+    global $post;
+    if ( has_post_thumbnail() ) {
+        $img = '<div class="post-thumbnail"><a href="'. get_permalink( $post->ID ) .'">'. get_the_post_thumbnail( $post->ID, 'custom_thumb' ) .'</a></div>';
+    } else {
+        $img = '';
+    }
+    return $img . $excerpt;
+}
+add_filter( 'the_excerpt', 'streetsheet_excerpt_thumbnail' );
 
 /**
  * Implement the Custom Header feature.
