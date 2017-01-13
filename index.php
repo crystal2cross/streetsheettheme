@@ -23,9 +23,20 @@ include "wp-load.php"; ?>
                             // Add featured content slider
                             get_template_part( 'featureflexslider' );
                     }
+                    
+                    $paged = max(1, get_query_var('paged'));
+                    
+                    $args = array(
+                        'posts_per_page' => 10,
+                        'ignore_sticky_posts' => true,
+                        'post__not_in' => get_option( 'sticky_posts' ),
+                        'paged' => $paged
+                    );
+                    
+                    $the_query = new WP_Query( $args );
                 ?>
 
-		<?php if ( have_posts() ) : ?>
+		<?php if ( $the_query->have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header>
@@ -34,7 +45,7 @@ include "wp-load.php"; ?>
 			<?php endif; ?>
 
 			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+			<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
 				<?php
 					// Is this the first post of the front page?

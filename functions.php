@@ -192,3 +192,11 @@ function streetsheet_flexslider() {
 }
 
 add_action('init', 'streetsheet_flexslider');
+
+function my_limit_archives( $args ) {
+    $args['limit'] = 4;
+    return $args;
+}
+ 
+add_filter( 'widget_archives_args', 'my_limit_archives' );
+add_filter( 'widget_archives_dropdown_args', 'my_limit_archives' );
