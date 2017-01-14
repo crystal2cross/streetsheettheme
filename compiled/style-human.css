@@ -613,8 +613,8 @@ a:hover, a:active {
   font-weight: 700;
 }
 
-.main-navigation .nav-menu > ul > li:first-child,
-.main-navigation .nav-menu > li:first-child {
+.main-navigation .menu-primary-container > ul > li:first-child,
+.main-navigation .menu-primary-container > li:first-child {
   border-top: 0;
 }
 
@@ -679,9 +679,9 @@ a:hover, a:active {
   left: 1em;
   font-size: 1em;
   text-transform: uppercase;
-  background-color: #000;
+  background-color: #008EAC;
   color: #fff;
-  border: solid 2px #fff;
+  border: solid 2px #008EAC;
   transition: all ease-out 400ms;
 }
 
@@ -715,12 +715,12 @@ a:hover, a:active {
   position: fixed;
   bottom: 0;
   padding: 1em;
-  z-index: 3;
+  z-index: 11;
 }
-.main-navigation.toggled > .nav-menu {
+.main-navigation.toggled > .menu-primary-container {
   padding: 1em;
   margin-bottom: 3em;
-  background-color: #000;
+  background-color: #008EAC;
 }
 
 .main-navigation.toggled ul {
@@ -743,15 +743,13 @@ a:hover, a:active {
   .main-navigation,
   .main-navigation.toggled {
     position: relative;
-    min-height: 4.5em;
     margin: 0 auto;
-    padding: 0 3.5em;
     background-color: #000;
   }
 
-  .nav-menu {
+  .menu-primary-container {
     font-size: 1.1em;
-    padding: .2em 0 0 0;
+    padding: .5em;
     background-color: #000;
   }
 
@@ -810,7 +808,7 @@ a:hover, a:active {
     position: absolute;
     width: 12em;
     display: block;
-    z-index: 10;
+    z-index: 11;
     margin-left: 0;
     background: #008EAC;
   }
