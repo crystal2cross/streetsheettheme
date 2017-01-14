@@ -249,7 +249,7 @@
 		text-decoration: none;
 		outline: solid 1px #008EAC;
 	}
-	
+
 	/* Create hover and focus contrast on drop-down items */
 	.main-navigation li li a:hover,
 	.main-navigation li li a:focus {
@@ -346,29 +346,21 @@
     }
 }
 
-.back-link-container {
-    font-family: 'FontAwesome';
-    color: #008EAC;
-    padding-bottom: .5em;
-    &:before {
-        content: "\f100";
-        font-size: 14px;
-        line-height: 27px;
-        position: relative;
-        top: 0;
-        bottom: 1px;
-        left: 1px;
-        width: 27px;
-    } 
+.streetsheet-breadcrumbs {
+    margin-bottom: 1em;
+    font-size: .9em;
+    a {
+        text-decoration: none;
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
 }
 
-.back-link {
-    font-family: $font__headings;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    &:hover,
-    &:focus {
-        text-decoration: underline;
+// Hide breadcrumbs on smaller screen widths
+@media screen and (max-width: 50em) {
+    .streetsheet-breadcrumbs {
+        display: none;
     }
 }

@@ -63,9 +63,16 @@
     margin: 0 0 1.5em;
 }
 
-.post {
+.post, .page {
     background-color: #fff;
     padding: 1em;
+    .site-content a {
+        text-decoration: none;
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
 }
 
 .read-more-link {

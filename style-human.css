@@ -890,32 +890,22 @@ a:hover, a:active {
   text-decoration: underline;
 }
 
-.back-link-container {
-  font-family: 'FontAwesome';
-  color: #008EAC;
-  padding-bottom: .5em;
+.streetsheet-breadcrumbs {
+  margin-bottom: 1em;
+  font-size: .9em;
 }
-.back-link-container:before {
-  content: "\f100";
-  font-size: 14px;
-  line-height: 27px;
-  position: relative;
-  top: 0;
-  bottom: 1px;
-  left: 1px;
-  width: 27px;
-}
-
-.back-link {
-  font-family: "Fira Sans", sans-serif;
+.streetsheet-breadcrumbs a {
   text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
 }
-.back-link:hover, .back-link:focus {
+.streetsheet-breadcrumbs a:hover, .streetsheet-breadcrumbs a:focus {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 50em) {
+  .streetsheet-breadcrumbs {
+    display: none;
+  }
+}
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -1522,9 +1512,15 @@ a:hover, a:active {
   margin: 0 0 1.5em;
 }
 
-.post {
+.post, .page {
   background-color: #fff;
   padding: 1em;
+}
+.post .site-content a, .page .site-content a {
+  text-decoration: none;
+}
+.post .site-content a:hover, .post .site-content a:focus, .page .site-content a:hover, .page .site-content a:focus {
+  text-decoration: underline;
 }
 
 .read-more-link {

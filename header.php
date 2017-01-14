@@ -62,3 +62,13 @@
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
+        
+        <div class="streetsheet-breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
+            <?php if(!is_front_page() && !is_home() && function_exists('bcn_display'))
+            {
+                ?>
+                <a  href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"> Home</a>
+                <?php
+                bcn_display();
+            }?>
+        </div>
