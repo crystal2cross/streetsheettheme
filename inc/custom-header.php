@@ -31,8 +31,8 @@ function streetsheettheme_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'streetsheettheme_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
-		'width'                  => 250,
-		'height'                 => 100,
+		'width'                  => 1600    ,
+		'height'                 => 420,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'streetsheettheme_header_style',
 	) ) );

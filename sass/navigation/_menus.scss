@@ -35,7 +35,6 @@
 
 .main-navigation a:hover,
 .main-navigation a:focus {
-	background: #008EAC;
 	color: #fff;
 }
 
@@ -109,7 +108,6 @@
 
 .dropdown-toggle:hover,
 .dropdown-toggle:focus {
-	background-color: #008EAC;
 	color: #fff;
 }
 
@@ -153,7 +151,7 @@
         color: #fff;
 }
 
-@media screen and (min-width: 50em) {
+@media screen and (min-width: 60em) {
 	.menu-toggle {
 		display: none;
 	}
@@ -192,7 +190,7 @@
 }
 
 /* Horizontal menu on wide screens */
-@media screen and (min-width: 50em) {
+@media screen and (min-width: 60em) {
 	
 	/* Position the menu in the header */
 	.main-navigation,
@@ -244,16 +242,13 @@
 	/* Add an outline on hovered and focused menu items */
 	.main-navigation a:hover,
 	.main-navigation a:focus {
-		background: #008EAC;
 		color: #fff;
 		text-decoration: none;
-		outline: solid 1px #008EAC;
 	}
 
 	/* Create hover and focus contrast on drop-down items */
 	.main-navigation li li a:hover,
 	.main-navigation li li a:focus {
-		background: #008EAC;
 		color: #fff;
 		text-decoration: none;
 	}
@@ -363,4 +358,20 @@
     .streetsheet-breadcrumbs {
         display: none;
     }
+}
+
+.streetsheet-donate a {
+    background-color: #00AC5C;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    &:hover,
+    &:focus {
+        background-color: #00AC5C;
+        text-decoration: none;
+    }
+}
+
+.streetsheet-coh {
+    padding-right: 1em;
 }
