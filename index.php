@@ -27,7 +27,7 @@ include "wp-load.php"; ?>
                     $paged = max(1, get_query_var('paged'));
                     
                     $args = array(
-                        'posts_per_page' => 10,
+                        'posts_per_page' => 5,
                         'ignore_sticky_posts' => true,
                         'post__not_in' => get_option( 'sticky_posts' ),
                         'paged' => $paged

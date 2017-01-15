@@ -109,7 +109,7 @@ function streetsheettheme_scripts() {
         wp_enqueue_style( 'streetsheettheme-local-fonts', get_template_directory_uri() . '/fonts/custom-fonts.css' );
         
         // Add FontAwesome
-        wp_enqueue_script( 'streetsheettheme-fontawesome', 'https://use.fontawesome.com/f3b26de71f.js' );
+        wp_enqueue_style( 'streetsheettheme-fontawesome', get_template_directory_uri() . '/fonts/font-awesome/css/font-awesome.min.css' );
         
 	wp_enqueue_script( 'streetsheettheme-navigation', get_template_directory_uri() . '/js/navigation.js', array( 'jquery' ), '20151215', true );
         wp_localize_script( 'streetsheettheme-navigation', 'screenReaderText', array(

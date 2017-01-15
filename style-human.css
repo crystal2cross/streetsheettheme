@@ -609,7 +609,7 @@ a:hover, a:active {
 .main-navigation .current-menu-ancestor > a,
 .main-navigation .current_page_item > a,
 .main-navigation .current_page_ancestor > a {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .main-navigation .menu-primary-container > ul > li:first-child,
@@ -838,9 +838,9 @@ a:hover, a:active {
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
-  width: 50%;
-  font-family: 'FontAwesome';
+  width: 33%;
   color: #008EAC;
+  font-family: 'FontAwesome';
 }
 .comment-navigation .nav-previous:before,
 .posts-navigation .nav-previous:before,
@@ -854,14 +854,22 @@ a:hover, a:active {
   width: 27px;
 }
 
+.comment-navigation .nav-previous-none,
+.posts-navigation .nav-previous-none,
+.post-navigation .nav-previous-none {
+  float: left;
+  width: 33%;
+  color: #eee;
+}
+
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
-  float: right;
+  float: left;
   text-align: right;
-  width: 50%;
-  font-family: 'FontAwesome';
+  width: 33%;
   color: #008EAC;
+  font-family: 'FontAwesome';
 }
 .comment-navigation .nav-next:after,
 .posts-navigation .nav-next:after,
@@ -873,6 +881,14 @@ a:hover, a:active {
   top: 0;
   left: 1px;
   width: 27px;
+}
+
+.comment-navigation .nav-home,
+.posts-navigation .nav-home,
+.post-navigation .nav-home {
+  float: left;
+  width: 33%;
+  text-align: center;
 }
 
 .nav-links a {
