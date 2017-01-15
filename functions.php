@@ -200,3 +200,14 @@ function my_limit_archives( $args ) {
  
 add_filter( 'widget_archives_args', 'my_limit_archives' );
 add_filter( 'widget_archives_dropdown_args', 'my_limit_archives' );
+
+add_filter( 'the_author', 'guest_author_name' );
+add_filter( 'get_the_author_display_name', 'guest_author_name' );
+ 
+function guest_author_name( $name ) {
+    global $post;
+    $author = get_post_meta( $post->ID, 'author', true );
+    if ( $author )
+    $name = $author;
+    return $name;
+}
