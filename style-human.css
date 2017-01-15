@@ -575,7 +575,7 @@ a:hover, a:active {
   position: relative;
   display: block;
   padding: 0.7em 1em;
-  font-weight: 400;
+  font-weight: 500;
   text-decoration: none;
   line-height: 1.6em;
   color: #fff;
@@ -879,7 +879,7 @@ a:hover, a:active {
   font-family: "Fira Sans", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
 }
 .nav-links a:hover, .nav-links a:focus {
   text-decoration: underline;
@@ -905,7 +905,7 @@ a:hover, a:active {
   background-color: #00AC5C;
   text-transform: uppercase;
   text-align: center;
-  font-weight: bold;
+  font-weight: 700;
 }
 .streetsheet-donate a:hover, .streetsheet-donate a:focus {
   background-color: #00AC5C;
@@ -1041,8 +1041,18 @@ a:hover, a:active {
   width: 100%;
   text-align: center;
   background-color: #000;
+  font-family: "Fira Sans", sans-serif;
   color: #fff;
   padding: 1em;
+  font-size: .9em;
+}
+.site-footer a {
+  font-weight: 500;
+}
+@media screen and (min-width: 40em) {
+  .site-footer {
+    font-size: 1.125em;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1142,11 +1152,19 @@ a:hover, a:active {
 }
 .widget .widget-title {
   margin-top: 0px;
-  font-size: 1em;
   font-weight: normal;
+  font-size: .8em;
   background-color: #000;
   color: #fff;
-  padding: .5em 1em;
+  padding: .8em 1em;
+}
+.widget a {
+  font-size: .8em;
+}
+@media screen and (min-width: 40em) {
+  .widget .widget-title, .widget a {
+    font-size: 1em;
+  }
 }
 
 .widget ul,
@@ -1178,7 +1196,7 @@ a:hover, a:active {
   }
 }
 .widget a {
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: none;
 }
 
@@ -1318,63 +1336,63 @@ a:hover, a:active {
 }
 
 /* Custom Recent Comments and Recent Posts widgets */
-.widget_popper_recent_comments ul,
-.widget_popper_recent_posts ul {
+.widget_streetsheet_recent_comments ul,
+.widget_streetsheet_recent_posts ul {
   margin-top: 2em;
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
-.site-content .widget_popper_recent_comments li,
-.site-content .widget_popper_recent_posts li {
+.site-content .widget_streetsheet_recent_comments li,
+.site-content .widget_streetsheet_recent_posts li {
   position: relative;
   padding: 0 0 1em 70px;
   margin-bottom: 2em;
   border-bottom: 1px solid #c3c3c3;
 }
 
-.widget_popper_recent_comments li:last-child,
-.widget_popper_recent_posts li:last-child {
+.widget_streetsheet_recent_comments li:last-child,
+.widget_streetsheet_recent_posts li:last-child {
   margin-bottom: 0;
   border-bottom: none;
   padding-bottom: 0;
 }
 
-.widget_popper_recent_comments a,
-.widget_popper_recent_posts a {
+.widget_streetsheet_recent_comments a,
+.widget_streetsheet_recent_posts a {
   display: block;
   font-size: 1em;
 }
 
-.widget_popper_recent_comments a:hover,
-.widget_popper_recent_comments a:focus,
-.widget_popper_recent_posts a:hover,
-.widget_popper_recent_posts a:focus {
+.widget_streetsheet_recent_comments a:hover,
+.widget_streetsheet_recent_comments a:focus,
+.widget_streetsheet_recent_posts a:hover,
+.widget_streetsheet_recent_posts a:focus {
   text-decoration: none;
   border-bottom: none;
 }
 
-.widget_popper_recent_comments .post-icon,
-.widget_popper_recent_posts .post-icon {
+.widget_streetsheet_recent_comments .post-icon,
+.widget_streetsheet_recent_posts .post-icon {
   position: absolute;
   left: 0;
   width: 50px;
   height: 50px;
 }
 
-.widget_popper_recent_comments .post-icon img {
+.widget_streetsheet_recent_comments .post-icon img {
   border-radius: 50px;
 }
 
-.widget_popper_recent_comments .title,
-.widget_popper_recent_comments .original-title {
+.widget_streetsheet_recent_comments .title,
+.widget_streetsheet_recent_comments .original-title {
   margin-top: 0;
   margin-bottom: .8em;
   font-size: .7em;
   line-height: 1.4em;
 }
 
-.widget_popper_recent_comments .excerpt {
+.widget_streetsheet_recent_comments .excerpt {
   margin-top: 0;
   margin-bottom: .8em;
   font-family: "Merriweather", serif;
@@ -1382,32 +1400,32 @@ a:hover, a:active {
   line-height: 1.4em;
 }
 
-.widget_popper_recent_comments .excerpt::before {
+.widget_streetsheet_recent_comments .excerpt::before {
   content: "“";
 }
 
-.widget_popper_recent_comments .excerpt::after {
+.widget_streetsheet_recent_comments .excerpt::after {
   content: "”";
 }
 
-.widget_popper_recent_comments .original-title {
+.widget_streetsheet_recent_comments .original-title {
   color: #808080;
   font-weight: 500;
 }
 
-.widget_popper_recent_comments .original-title span {
+.widget_streetsheet_recent_comments .original-title span {
   font-weight: normal;
   font-style: italic;
 }
 
-.widget_popper_recent_comments a:hover .original-title,
-.widget_popper_recent_comments a:focus .original-title {
+.widget_streetsheet_recent_comments a:hover .original-title,
+.widget_streetsheet_recent_comments a:focus .original-title {
   color: #000;
   text-decoration: underline;
 }
 
 /* Custom Recent Posts widget */
-.widget_popper_recent_posts .post-icon {
+.widget_streetsheet_recent_posts .post-icon {
   width: 50px;
   height: 50px;
   font-size: 1.3em;
@@ -1417,21 +1435,21 @@ a:hover, a:active {
   background: #333333;
 }
 
-.widget_popper_recent_posts .title {
+.widget_streetsheet_recent_posts .title {
   margin: 0;
   font-size: .9em;
   line-height: 1.4em;
 }
 
-.widget_popper_recent_posts .meta {
+.widget_streetsheet_recent_posts .meta {
   margin: 0 0 .8em;
   font-size: .7em;
   text-transform: uppercase;
   color: #808080;
 }
 
-.widget_popper_recent_posts a:hover .title,
-.widget_popper_recent_posts a:focus .title {
+.widget_streetsheet_recent_posts a:hover .title,
+.widget_streetsheet_recent_posts a:focus .title {
   text-decoration: underline;
 }
 

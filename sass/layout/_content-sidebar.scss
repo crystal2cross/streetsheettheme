@@ -65,10 +65,18 @@
 }
 
 .site-footer {
-	clear: both;
-	width: 100%;
-        text-align: center;
-        background-color: #000;
-        color: #fff;
-        padding: 1em;
+    clear: both;
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    font-family: $font__headings;
+    color: #fff;
+    padding: 1em;
+    font-size: .9em;
+    a {
+        font-weight: 500;
+    }
+    @media screen and (min-width: 40em) {
+        font-size: 1.125em;
+    }
 }

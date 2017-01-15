@@ -105,8 +105,8 @@ add_action( 'widgets_init', 'streetsheettheme_widgets_init' );
 function streetsheettheme_scripts() {
 	wp_enqueue_style( 'streetsheettheme-style', get_stylesheet_uri() );
         
-        // Add Google fonts: Fira Sans and Merriweather
-        wp_enqueue_style( 'streetsheettheme-google-fonts', 'https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700,700i|Merriweather:400,400i,700,700i');
+        // Add local fonts: Fira Sans and Merriweather
+        wp_enqueue_style( 'streetsheettheme-local-fonts', get_template_directory_uri() . '/fonts/custom-fonts.css' );
         
         // Add FontAwesome
         wp_enqueue_script( 'streetsheettheme-fontawesome', 'https://use.fontawesome.com/f3b26de71f.js' );
