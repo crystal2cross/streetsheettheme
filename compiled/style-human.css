@@ -893,6 +893,13 @@ a:hover, a:active {
   text-align: center;
 }
 
+.comment-navigation .nav-home-only,
+.posts-navigation .nav-home-only,
+.post-navigation .nav-home-only {
+  width: 100%;
+  text-align: center;
+}
+
 .nav-links a {
   font-family: "Fira Sans", sans-serif;
   text-decoration: none;
