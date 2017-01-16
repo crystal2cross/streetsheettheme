@@ -268,9 +268,9 @@ html[xmlns] .flexslider .slides {
 .flex-caption b {
     font-weight: bold;
     font-family: 'Fira Sans', sans-serif;
-    font-size: 1.2em;
-    padding-bottom: 20px;
-    
+    font-size: 2.2em;
+    line-height: .8em;
+    font-style: italic;
 }
 
 .flex-active-slide a {

@@ -1538,6 +1538,7 @@ a:hover, a:active {
   margin-bottom: 0;
   font-style: italic;
   color: #008EAC;
+  line-height: 1.1em;
 }
 .entry-title a {
   text-decoration: none;
