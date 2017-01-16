@@ -194,7 +194,7 @@ function streetsheet_flexslider() {
 add_action('init', 'streetsheet_flexslider');
 
 function my_limit_archives( $args ) {
-    $args['limit'] = 4;
+    //$args['limit'] = 4;
     return $args;
 }
  
@@ -211,3 +211,10 @@ function guest_author_name( $name ) {
     $name = $author;
     return $name;
 }
+
+function streetsheet_filter_pre_get_posts( $query ) {
+    if ( ! is_singular() && $query->is_main_query() ) {
+        $query->set( 'post__not_in', array( 2385, 2388, 2390, 2392 ) );
+    }
+}
+add_action( 'pre_get_posts', 'streetsheet_filter_pre_get_posts' );
