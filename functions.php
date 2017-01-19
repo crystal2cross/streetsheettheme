@@ -1,4 +1,9 @@
 <?php
+/* Just in case...
+update_option( 'siteurl', 'http://localhost:8888' );
+update_option( 'home', 'http://localhost:8888m' );
+*/
+
 /**
  * Street Sheet Theme functions and definitions.
  *
@@ -133,7 +138,7 @@ function streetsheet_excerpt_thumbnail( $excerpt ){
     } else {
         $img = '';
     }
-    return $img . $excerpt;
+    return $img . '<div class="post-text">' . $excerpt . '</div>';
 }
 add_filter( 'the_excerpt', 'streetsheet_excerpt_thumbnail' );
 

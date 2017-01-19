@@ -4,7 +4,6 @@
 	width: 100%;
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 300;
-	font-size: 1em;
 }
 
 .main-navigation ul {
@@ -26,10 +25,9 @@
 .main-navigation a {
 	position: relative;
 	display: block;
-	padding: 0.7em 1em;
+	padding: 1em 1.2em;
 	font-weight: 500;
 	text-decoration: none;
-	line-height: 1.6em;
 	color: #fff;
 }
 
@@ -126,7 +124,6 @@
 	z-index: 100;
 	bottom: 1em;
 	left: 1em;
-	font-size: 1em;
 	text-transform: uppercase;
 	background-color: #008EAC;
 	color: #fff;
@@ -134,15 +131,15 @@
 	transition: all ease-out 400ms;
 }
 
-.menu-toggle.hide {
-	bottom: -2.5em;
-}
+/*.menu-toggle.hide {
+	bottom: -3em;
+}*/
 
 /* Make sure the button doesn't hide when menu is open. */
 
-.toggled .menu-toggle.hide {
+/*.toggled .menu-toggle.hide {
 	bottom: 1em;
-}
+}*/
 
 .menu-toggle:hover,
 .menu-toggle:focus {
@@ -201,7 +198,6 @@
 	}
 	
 	.menu-primary-container {
-                font-size: 1.1em;
 		padding: .5em;
 		background-color: #000;
 	}
@@ -289,7 +285,7 @@
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
-	margin: 0 0 1.5em;
+	margin: 0 0 1.2em;
 	overflow: hidden;
 }
 
@@ -365,8 +361,7 @@
 }
 
 .streetsheet-breadcrumbs {
-    margin-bottom: 1em;
-    font-size: .9em;
+    margin: .5em 0 1em 1em;
     a {
         text-decoration: none;
         &:hover,

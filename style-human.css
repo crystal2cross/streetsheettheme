@@ -276,35 +276,16 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Fira Sans", sans-serif;
   clear: both;
-  line-height: 1.3em;
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
+  line-height: 1.2em;
+  padding: .2em 0;
 }
 
-h1 {
-  font-size: 2.4em;
-}
-
-h2 {
-  font-size: 2.2em;
-}
-
-h3 {
-  font-size: 2em;
-}
-
-h4 {
-  font-size: 1.8em;
-}
-
-h5 {
-  font-size: 1.6em;
-}
-
-h6 {
-  font-size: 1.4em;
-}
-
+/*h1 { font-size: 2.4em; }
+h2 { font-size: 2.2em; }
+h3 { font-size: 2em; }
+h4 { font-size: 1.8em; }
+h5 { font-size: 1.6em; }
+h6 { font-size: 1.4em; }*/
 p {
   margin-bottom: 1.5em;
 }
@@ -442,9 +423,6 @@ input[type="submit"] {
   background: #fff;
   color: #000;
   font-family: 'Fira Sans', sans-serif;
-  font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 1;
   padding: .6em 1em .4em;
 }
 button:hover,
@@ -552,7 +530,6 @@ a:hover, a:active {
   width: 100%;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 300;
-  font-size: 1em;
 }
 
 .main-navigation ul {
@@ -574,10 +551,9 @@ a:hover, a:active {
 .main-navigation a {
   position: relative;
   display: block;
-  padding: 0.7em 1em;
+  padding: 1em 1.2em;
   font-weight: 500;
   text-decoration: none;
-  line-height: 1.6em;
   color: #fff;
 }
 
@@ -673,7 +649,6 @@ a:hover, a:active {
   z-index: 100;
   bottom: 1em;
   left: 1em;
-  font-size: 1em;
   text-transform: uppercase;
   background-color: #008EAC;
   color: #fff;
@@ -681,15 +656,13 @@ a:hover, a:active {
   transition: all ease-out 400ms;
 }
 
-.menu-toggle.hide {
-  bottom: -2.5em;
-}
-
+/*.menu-toggle.hide {
+	bottom: -3em;
+}*/
 /* Make sure the button doesn't hide when menu is open. */
-.toggled .menu-toggle.hide {
-  bottom: 1em;
-}
-
+/*.toggled .menu-toggle.hide {
+	bottom: 1em;
+}*/
 .menu-toggle:hover,
 .menu-toggle:focus {
   text-decoration: none;
@@ -744,7 +717,6 @@ a:hover, a:active {
   }
 
   .menu-primary-container {
-    font-size: 1.1em;
     padding: .5em;
     background-color: #000;
   }
@@ -830,7 +802,7 @@ a:hover, a:active {
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
-  margin: 0 0 1.5em;
+  margin: 0 0 1.2em;
   overflow: hidden;
 }
 
@@ -909,8 +881,7 @@ a:hover, a:active {
 }
 
 .streetsheet-breadcrumbs {
-  margin-bottom: 1em;
-  font-size: .9em;
+  margin: .5em 0 1em 1em;
 }
 .streetsheet-breadcrumbs a {
   text-decoration: none;
@@ -1001,7 +972,7 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 60em) {
   .content-area {
     float: left;
     width: 67%;
@@ -1067,15 +1038,9 @@ a:hover, a:active {
   font-family: "Fira Sans", sans-serif;
   color: #fff;
   padding: 1em;
-  font-size: .9em;
 }
 .site-footer a {
   font-weight: 500;
-}
-@media screen and (min-width: 40em) {
-  .site-footer {
-    font-size: 1.125em;
-  }
 }
 
 /*--------------------------------------------------------------
@@ -1119,22 +1084,6 @@ a:hover, a:active {
   text-align: center;
 }
 
-.site-title {
-  margin: 1.7em 1em 0;
-  font-family: "Fira Sans", sans-serif;
-  font-size: 2.4em;
-  font-weight: bold;
-  line-height: 1.3em;
-  color: #000;
-  text-transform: uppercase;
-  word-break: break-word;
-}
-
-@media screen and (max-width: 30em) {
-  .site-title {
-    font-size: 2em;
-  }
-}
 .site-title a {
   text-decoration: none;
   color: inherit;
@@ -1146,8 +1095,7 @@ a:hover, a:active {
 }
 
 .site-description {
-  margin: -3em 2em 0em;
-  font-size: 90%;
+  margin: 1.2em 2em 0em;
   color: #999;
 }
 
@@ -1158,6 +1106,22 @@ a:hover, a:active {
   margin-bottom: 1.5em;
 }
 
+@media screen and (max-width: 50em) {
+  .site-description {
+    margin-top: .8em;
+    font-size: .9em;
+  }
+}
+@media screen and (max-width: 30em) {
+  .site-description {
+    display: none;
+  }
+
+  .site-logo img {
+    max-width: 50%;
+    margin-top: 1em;
+  }
+}
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
@@ -1167,7 +1131,6 @@ a:hover, a:active {
 
 .widget {
   background-color: #fff;
-  margin-bottom: 1em;
   padding: 1em;
   /* Make sure select elements fit in widgets. */
 }
@@ -1175,20 +1138,12 @@ a:hover, a:active {
   max-width: 100%;
 }
 .widget .widget-title {
-  margin-top: 0px;
+  margin: -1em -1em 1em -1em;
   font-weight: normal;
-  font-size: .8em;
+  font-size: 1em;
   background-color: #000;
   color: #fff;
   padding: .8em 1em;
-}
-.widget a {
-  font-size: .8em;
-}
-@media screen and (min-width: 40em) {
-  .widget .widget-title, .widget a {
-    font-size: 1em;
-  }
 }
 
 .widget ul,
@@ -1245,15 +1200,6 @@ a:hover, a:active {
 }
 
 /* Archive and Categories widgets */
-.widget_archive .widget-title {
-  margin: -1em -1em 1em -1em;
-}
-@media screen and (max-width: 40em) {
-  .widget_archive .widget-title {
-    margin: -1.25em -1.25em 1em -1.25em;
-  }
-}
-
 .streetsheet-styled-select {
   position: relative;
 }
@@ -1319,30 +1265,31 @@ a:hover, a:active {
 
 .widget li a.rsswidget {
   padding-right: .5em;
-  font-size: 1em;
-  line-height: 1.4em;
 }
 
 .rss-date,
 .widget_rss cite {
   color: #333;
-  font-size: .8em;
 }
 
 .rssSummary {
   padding: .5em 0;
   font-family: "Merriweather", serif;
-  font-size: .8em;
-  line-height: 1.4em;
 }
 
 /* Search widget */
+.widget_search {
+  margin-bottom: 1em;
+}
+
 .widget_search input[type="search"] {
   box-sizing: border-box;
   width: 100%;
   padding: .5em 1em;
   border: 1px solid #c3c3c3;
   border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
 }
 
 /* Calendar widget */
@@ -1352,7 +1299,6 @@ a:hover, a:active {
 
 .widget_calendar caption {
   padding: .5em 0;
-  font-size: 1em;
   font-weight: 700;
   text-align: left;
 }
@@ -1368,7 +1314,6 @@ a:hover, a:active {
 
 .widget_calendar td {
   padding: .2em;
-  font-size: .8em;
   text-align: center;
   background: #d6d6d6;
   border: 3px solid white;
@@ -1383,11 +1328,6 @@ a:hover, a:active {
 }
 
 /* Text widget */
-.textwidget {
-  font-size: .8em;
-  line-height: 1.6em;
-}
-
 /* Custom Recent Comments and Recent Posts widgets */
 .widget_streetsheet_recent_comments ul,
 .widget_streetsheet_recent_posts ul {
@@ -1414,7 +1354,6 @@ a:hover, a:active {
 .widget_streetsheet_recent_comments a,
 .widget_streetsheet_recent_posts a {
   display: block;
-  font-size: 1em;
 }
 
 .widget_streetsheet_recent_comments a:hover,
@@ -1441,16 +1380,12 @@ a:hover, a:active {
 .widget_streetsheet_recent_comments .original-title {
   margin-top: 0;
   margin-bottom: .8em;
-  font-size: .7em;
-  line-height: 1.4em;
 }
 
 .widget_streetsheet_recent_comments .excerpt {
   margin-top: 0;
   margin-bottom: .8em;
   font-family: "Merriweather", serif;
-  font-size: .8em;
-  line-height: 1.4em;
 }
 
 .widget_streetsheet_recent_comments .excerpt::before {
@@ -1481,8 +1416,6 @@ a:hover, a:active {
 .widget_streetsheet_recent_posts .post-icon {
   width: 50px;
   height: 50px;
-  font-size: 1.3em;
-  line-height: 50px;
   text-align: center;
   color: #fff;
   background: #333333;
@@ -1490,13 +1423,10 @@ a:hover, a:active {
 
 .widget_streetsheet_recent_posts .title {
   margin: 0;
-  font-size: .9em;
-  line-height: 1.4em;
 }
 
 .widget_streetsheet_recent_posts .meta {
   margin: 0 0 .8em;
-  font-size: .7em;
   text-transform: uppercase;
   color: #808080;
 }
@@ -1513,20 +1443,18 @@ a:hover, a:active {
 ## Global
 --------------------------------------------------------------*/
 .site-content {
-  font-size: 1.125em;
-  line-height: 1.6em;
   background-color: #eee;
-  padding: 1em;
+  padding: .5em 1em;
 }
 
-.site-main {
-  font-size: .8em;
-  line-height: 1.6em;
-}
+@media screen and (max-width: 50em) {
+  .site-content {
+    padding: 1em;
+    font-size: .9em;
+  }
 
-@media screen and (min-width: 40em) {
-  .site-main {
-    font-size: 1em;
+  .site-logo {
+    margin-bottom: -.5em;
   }
 }
 /*--------------------------------------------------------------
@@ -1572,8 +1500,8 @@ a:hover, a:active {
   margin-top: 0;
   margin-bottom: 0;
   font-style: italic;
+  font-size: 2em;
   color: #008EAC;
-  line-height: 1.1em;
 }
 .entry-title a {
   text-decoration: none;
@@ -1581,13 +1509,24 @@ a:hover, a:active {
 .entry-title a:hover, .entry-title a:focus {
   text-decoration: underline;
 }
+@media screen and (max-width: 50em) {
+  .entry-title {
+    font-size: 1.7em;
+  }
+}
 
 .post-date {
   color: #000;
 }
 
 .entry-content {
-  margin-bottom: -25px;
+  margin-bottom: -1.5em;
+}
+
+.post-thumbnail {
+  float: right;
+  height: auto;
+  padding-bottom: 1em;
 }
 
 .page-links {
@@ -1597,13 +1536,16 @@ a:hover, a:active {
 
 .post, .page {
   background-color: #fff;
-  padding: 1em;
 }
 .post .site-content a, .page .site-content a {
   text-decoration: none;
 }
 .post .site-content a:hover, .post .site-content a:focus, .page .site-content a:hover, .page .site-content a:focus {
   text-decoration: underline;
+}
+
+.post, .type-page {
+  padding: 1em;
 }
 
 .read-more-link {
@@ -1660,21 +1602,9 @@ object {
   max-width: 100%;
 }
 
-.post-thumbnail {
-  float: right;
-  height: auto;
-  padding-bottom: 1em;
-}
-
 @media screen and (min-width: 40em) {
   .attachment-custom_thumb {
-    margin-left: 10px;
-    width: 12em;
-  }
-}
-@media screen and (min-width: 70em) {
-  .attachment-custom_thumb {
-    margin-left: 10px;
+    margin-left: 1em;
     width: 20em;
   }
 }

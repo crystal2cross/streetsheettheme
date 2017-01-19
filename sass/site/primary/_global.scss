@@ -1,17 +1,14 @@
 .site-content {
-    font-size: 1.125em;
-    line-height: 1.6em;
     background-color: #eee;
-    padding: 1em;
+    padding: .5em 1em;
 }
 
-.site-main {
-    font-size: .8em;
-    line-height: 1.6em;
-}
-
-@media screen and (min-width: 40em) {
-    .site-main {
-        font-size: 1em;
+@media screen and (max-width: 50em) {
+    .site-content {
+        padding: 1em;
+        font-size: .9em;
+    }
+    .site-logo {
+        margin-bottom: -.5em;
     }
 }

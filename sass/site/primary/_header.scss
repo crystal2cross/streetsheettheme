@@ -7,23 +7,6 @@
     text-align: center;
 }
 
-.site-title {
-    margin: 1.7em 1em 0;
-    font-family: $font__headings;
-    font-size: 2.4em;
-    font-weight: bold;
-    line-height: 1.3em;
-    color: #000;
-    text-transform: uppercase;
-    word-break: break-word;
-}
-
-@media screen and (max-width: 30em) {
-    .site-title {
-        font-size: 2em;
-    }
-}
-
 .site-title a {
     text-decoration: none;
     color: inherit;
@@ -35,8 +18,7 @@
 }
 
 .site-description {
-    margin: -3em 2em 0em;
-    font-size: 90%;
+    margin: 1.2em 2em 0em;
     color: #999;
 }
 
@@ -45,4 +27,21 @@
     margin: 0 auto;
     margin-top: .5em;
     margin-bottom: 1.5em;
+}
+
+@media screen and (max-width: 50em) {
+    .site-description {
+        margin-top: .8em;
+        font-size: .9em;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    .site-description {
+        display: none;
+    }
+    .site-logo img {
+        max-width: 50%;
+        margin-top: 1em;
+    }
 }

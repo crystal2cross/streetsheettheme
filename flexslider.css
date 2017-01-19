@@ -73,7 +73,7 @@ html[xmlns] .flexslider .slides {
  * DEFAULT THEME
  * ====================================================================================================================*/
 .flexslider {
-  margin: 0 0 36px;
+  margin: 0 0 42px;
   background: #000;
   position: relative;
   zoom: 1;
@@ -102,7 +102,7 @@ html[xmlns] .flexslider .slides {
   text-decoration: none;
   display: block;
   width: 40px;
-  height: 40px;
+  height: 50px;
   margin: -20px 0 0;
   position: absolute;
   top: 50%;
@@ -120,7 +120,7 @@ html[xmlns] .flexslider .slides {
   padding: 5px;
   display: inline-block;
   content: '\f0d9';
-  color: rgba(0, 0, 0, 0.8);
+  color: #fff;
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
 }
 .flex-direction-nav a.flex-next:before {
@@ -261,16 +261,22 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-caption {
-    padding: 1em;
+    padding: 1em 1em 0em 1em;
     color: #fff;
 }
 
 .flex-caption b {
     font-weight: bold;
     font-family: 'Fira Sans', sans-serif;
-    font-size: 2.2em;
+    font-size: 1.7em;
     line-height: .8em;
     font-style: italic;
+}
+
+@media screen and (min-width: 50em) {
+    .flex-caption b {
+        font-size: 2em;
+    }
 }
 
 .flex-active-slide a {

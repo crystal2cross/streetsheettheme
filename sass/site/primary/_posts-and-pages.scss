@@ -1,9 +1,9 @@
 .sticky {
-	display: block;
+    display: block;
 }
 
 .hentry {
-	margin: 0 0 1.5em;
+    margin: 0 0 1.5em;
 }
 
 .byline {
@@ -20,19 +20,19 @@
 
 .byline,
 .updated:not(.published){
-	display: none;
+    display: none;
 }
 
 .single .byline,
 .group-blog .byline {
-	display: inline;
+    display: inline;
 }
 
 @media screen and (max-width: 50em) {
     .page-content,
     .entry-content,
     .entry-summary {
-            margin: 1em 0 0;
+        margin: 1em 0 0;
     }
 }
 
@@ -40,14 +40,19 @@
     margin-top: 0;
     margin-bottom: 0;
     font-style: italic;
+    font-size: 2em;
     color: #008EAC;
-    line-height: 1.1em;
+    
     a {
         text-decoration: none;
         &:hover,
 	&:focus {
             text-decoration: underline;
 	}
+    }
+    
+    @media screen and (max-width: 50em) {
+        font-size: 1.7em;
     }
 }
 
@@ -56,7 +61,13 @@
 }
 
 .entry-content {
-    margin-bottom: -25px;
+    margin-bottom: -1.5em;
+}
+
+.post-thumbnail {
+    float: right;
+    height: auto;
+    padding-bottom: 1em;
 }
     
 .page-links {
@@ -66,7 +77,6 @@
 
 .post, .page {
     background-color: #fff;
-    padding: 1em;
     .site-content a {
         text-decoration: none;
         &:hover,
@@ -74,6 +84,10 @@
             text-decoration: underline;
         }
     }
+}
+
+.post, .type-page {
+    padding: 1em;
 }
 
 .read-more-link {
