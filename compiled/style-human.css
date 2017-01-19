@@ -1238,7 +1238,7 @@ a.back-to-top i {
   display: inline-block;
   position: absolute;
   right: 1em;
-  top: .4em;
+  top: .8em;
   pointer-events: none;
 }
 
@@ -1482,6 +1482,10 @@ a.back-to-top i {
 
   .site-logo {
     margin-bottom: -.5em;
+  }
+
+  .widget_search input[type="search"], .widget_archive select {
+    font-size: 1em;
   }
 }
 /*--------------------------------------------------------------
