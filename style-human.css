@@ -664,9 +664,11 @@ a:hover, a:active {
 	bottom: 1em;
 }*/
 .menu-toggle:hover,
-.menu-toggle:focus {
+.menu-toggle:focus,
+.menu-toggle:active {
   text-decoration: none;
   background-color: #008EAC;
+  border: solid 2px #008EAC;
   color: #fff;
 }
 
@@ -908,6 +910,25 @@ a:hover, a:active {
 
 .streetsheet-coh {
   padding-right: 1em;
+}
+
+a.back-to-top {
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  z-index: 999;
+  right: 1.1em;
+  bottom: 1em;
+  background: #008EAC;
+  color: #fff;
+}
+a.back-to-top i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
 }
 
 /*--------------------------------------------------------------

@@ -116,14 +116,16 @@ function streetsheettheme_scripts() {
         // Add FontAwesome
         wp_enqueue_style( 'streetsheettheme-fontawesome', get_template_directory_uri() . '/fonts/font-awesome/css/font-awesome.min.css' );
         
+        wp_enqueue_script( 'streetsheettheme-back-to-top', get_template_directory_uri() . '/js/back-to-top.js', array( 'jquery'), '20151215', true );
+        
 	wp_enqueue_script( 'streetsheettheme-navigation', get_template_directory_uri() . '/js/navigation.js', array( 'jquery' ), '20151215', true );
         wp_localize_script( 'streetsheettheme-navigation', 'screenReaderText', array(
 		'expand'   => '<span class="screen-reader-text">' . __( 'expand child menu', 'streetsheet' ) . '</span>',
 		'collapse' => '<span class="screen-reader-text">' . __( 'collapse child menu', 'streetsheet' ) . '</span>',
 	) );
         
-	wp_enqueue_script( 'streetsheettheme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-
+	wp_enqueue_script( 'streetsheettheme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array( 'jquery' ), '20151215', true );
+        
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

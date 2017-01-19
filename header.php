@@ -59,6 +59,8 @@
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
+            
+        <a href="#" class="back-to-top"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
         
         <div class="streetsheet-breadcrumbs" typeof="BreadcrumbList" vocab="http://schema.org/">
             <?php if(!is_front_page() && !is_home() && function_exists('bcn_display'))
