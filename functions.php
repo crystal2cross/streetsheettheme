@@ -219,7 +219,7 @@ function guest_author_name( $name ) {
 
 function streetsheet_filter_pre_get_posts( $query ) {
     if ( ! is_singular() && $query->is_main_query() ) {
-        $query->set( 'post__not_in', array( 2385, 2388, 2390, 2392 ) );
+        $query->set( 'post__not_in', array( 2328, 2331, 2335, 2338 ) );
     }
 }
 add_action( 'pre_get_posts', 'streetsheet_filter_pre_get_posts' );
