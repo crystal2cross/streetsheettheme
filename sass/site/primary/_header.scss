@@ -45,3 +45,51 @@
         margin-top: 1em;
     }
 }
+
+.streetsheet-header-links {
+    background-color: #fff;
+    position: relative;
+}
+
+.streetsheet-read-issue-link {
+    text-align: left;
+    display: inline-block;
+    position: absolute;
+    margin-left: 1em;
+    padding-top: .5em;
+    left: 0;
+}
+
+.streetsheet-social-media-links {
+    text-align: right;
+    display: inline-block;
+    position: absolute;
+    margin-right: 1em;
+    padding-top: .5em;
+    right: 0;
+    i {
+        padding-left: .2em;
+    }
+}
+
+.streetsheet-social-media-links-mobile {
+    display: none;
+    text-align: center;
+    i {
+        padding: 0 .5em 0em .5em;
+        margin-bottom: .7em;
+        border-right: 1px solid #000;
+    }
+    i:last-child {
+        border: 0px;
+    }
+}
+
+@media screen and (max-width: 60em) {
+    .streetsheet-social-media-links-mobile {
+        display: block;
+    }
+    .streetsheet-header-links {
+        display: none;
+    }
+}

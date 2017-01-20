@@ -69,7 +69,6 @@
 /* Make sure select elements fit in widgets. */
 .widget select {
 	width: 100%;
-	padding: .5em;
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
@@ -97,7 +96,7 @@
     display: inline-block;
     position: absolute;
     right: 1em;
-    top: .8em;
+    top: .5em;
     pointer-events: none;
 }
 

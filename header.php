@@ -19,10 +19,21 @@
 <?php wp_head(); ?>
 </head>
 
+<div class="streetsheet-header-links">
+    <!--<div class="streetsheet-read-issue-link">READ ISSUE LINK</div>-->
+    <div class="streetsheet-social-media-links">
+        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i>
+    </div>
+</div>
+
 <body <?php body_class(); ?>>
+    
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'streetsheettheme' ); ?></a>
-
+        
         <?php if ( get_header_image() ) { ?>
             <header id="masthead" class="site-header" style="background-image: url( <?php header_image() ?>) " role="banner">
         <?php } else { ?>
@@ -51,6 +62,13 @@
 				} ?>
 			</a>
 		</div>
+                
+                <div class="streetsheet-social-media-links-mobile">
+                    <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+                    <i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i>
+                    <i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i>
+                    <i class="fa fa-youtube-square fa-lg" aria-hidden="true"></i>
+                </div>
                 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'streetsheettheme' ); ?></button>

@@ -1016,10 +1016,26 @@ a.back-to-top i {
     padding-left: 3em !important;
     padding-right: 3em !important;
   }
+
+  .streetsheet-read-issue-link {
+    padding-left: 3em !important;
+  }
+
+  .streetsheet-social-media-links {
+    padding-right: 3em !important;
+  }
 }
 @media screen and (min-width: 70em) {
   .site-content {
     padding-left: 5em !important;
+    padding-right: 5em !important;
+  }
+
+  .streetsheet-read-issue-link {
+    padding-left: 5em !important;
+  }
+
+  .streetsheet-social-media-links {
     padding-right: 5em !important;
   }
 }
@@ -1028,10 +1044,26 @@ a.back-to-top i {
     padding-left: 7em !important;
     padding-right: 7em !important;
   }
+
+  .streetsheet-read-issue-link {
+    padding-left: 7em !important;
+  }
+
+  .streetsheet-social-media-links {
+    padding-right: 7em !important;
+  }
 }
 @media screen and (min-width: 90em) {
   .site-content {
     padding-left: 9em !important;
+    padding-right: 9em !important;
+  }
+
+  .streetsheet-read-issue-link {
+    padding-left: 9em !important;
+  }
+
+  .streetsheet-social-media-links {
     padding-right: 9em !important;
   }
 }
@@ -1040,16 +1072,40 @@ a.back-to-top i {
     padding-left: 12em !important;
     padding-right: 12em !important;
   }
+
+  .streetsheet-read-issue-link {
+    padding-left: 12em !important;
+  }
+
+  .streetsheet-social-media-links {
+    padding-right: 12em !important;
+  }
 }
 @media screen and (min-width: 110em) {
   .site-content {
     padding-left: 15em !important;
     padding-right: 15em !important;
   }
+
+  .streetsheet-read-issue-link {
+    padding-left: 15em !important;
+  }
+
+  .streetsheet-social-media-links {
+    padding-right: 15em !important;
+  }
 }
 @media screen and (min-width: 115em) {
   .site-content {
     padding-left: 18em !important;
+    padding-right: 18em !important;
+  }
+
+  .streetsheet-read-issue-link {
+    padding-left: 18em !important;
+  }
+
+  .streetsheet-social-media-links {
     padding-right: 18em !important;
   }
 }
@@ -1145,6 +1201,54 @@ a.back-to-top i {
     margin-top: 1em;
   }
 }
+.streetsheet-header-links {
+  background-color: #fff;
+  position: relative;
+}
+
+.streetsheet-read-issue-link {
+  text-align: left;
+  display: inline-block;
+  position: absolute;
+  margin-left: 1em;
+  padding-top: .5em;
+  left: 0;
+}
+
+.streetsheet-social-media-links {
+  text-align: right;
+  display: inline-block;
+  position: absolute;
+  margin-right: 1em;
+  padding-top: .5em;
+  right: 0;
+}
+.streetsheet-social-media-links i {
+  padding-left: .2em;
+}
+
+.streetsheet-social-media-links-mobile {
+  display: none;
+  text-align: center;
+}
+.streetsheet-social-media-links-mobile i {
+  padding: 0 .5em 0em .5em;
+  margin-bottom: .7em;
+  border-right: 1px solid #000;
+}
+.streetsheet-social-media-links-mobile i:last-child {
+  border: 0px;
+}
+
+@media screen and (max-width: 60em) {
+  .streetsheet-social-media-links-mobile {
+    display: block;
+  }
+
+  .streetsheet-header-links {
+    display: none;
+  }
+}
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
@@ -1216,7 +1320,6 @@ a.back-to-top i {
 /* Make sure select elements fit in widgets. */
 .widget select {
   width: 100%;
-  padding: .5em;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1240,7 +1343,7 @@ a.back-to-top i {
   display: inline-block;
   position: absolute;
   right: 1em;
-  top: .8em;
+  top: .5em;
   pointer-events: none;
 }
 
