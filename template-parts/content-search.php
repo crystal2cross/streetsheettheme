@@ -33,6 +33,11 @@
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
+        
+        <div class="streetsheet-social-links-container">
+            <div class="streetsheet-social-links-label">Share this:</div>
+            <?php if ( function_exists( 'ADDTOANY_SHARE_SAVE_KIT' ) ) { ADDTOANY_SHARE_SAVE_KIT(); } ?>
+        </div>
 
 	<footer class="entry-footer">
 		<?php streetsheettheme_entry_footer(); ?>

@@ -896,6 +896,8 @@ a:hover, a:active {
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 .streetsheet-donate a:hover, .streetsheet-donate a:focus {
   background-color: #00AC5C;
@@ -1202,6 +1204,8 @@ a.back-to-top i {
 .clear:after,
 .entry-content:before,
 .entry-content:after,
+.entry-summary:before,
+.entry-summary:after,
 .comment-content:before,
 .comment-content:after,
 .site-header:before,
@@ -1217,6 +1221,7 @@ a.back-to-top i {
 
 .clear:after,
 .entry-content:after,
+.entry-summary:after,
 .comment-content:after,
 .site-header:after,
 .site-content:after,
@@ -1747,7 +1752,7 @@ a.back-to-top i {
   color: #000;
 }
 
-.entry-content {
+.entry-content, .entry-summary {
   margin-bottom: -1.5em;
 }
 

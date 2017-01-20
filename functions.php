@@ -170,7 +170,6 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 // FLEXSLIDER
-
 function streetsheet_flexslider() {
 	if (!is_admin()) {
 
@@ -201,7 +200,6 @@ function streetsheet_flexslider() {
 add_action('init', 'streetsheet_flexslider');
 
 function my_limit_archives( $args ) {
-    //$args['limit'] = 4;
     return $args;
 }
  
