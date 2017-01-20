@@ -3,6 +3,21 @@
     padding: .5em 1em;
 }
 
+.site-footer {
+    padding: 2em 0em 2em 0em;
+}
+
+.textwidget a {
+    font-family: $font__headings;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+}
+
 @media screen and (max-width: 50em) {
     .site-content {
         padding: 1em;
@@ -13,5 +28,9 @@
     }
     .widget_search input[type="search"], .widget_archive select {
         font-size: 1em;
+    }
+    .site-footer {
+        font-size: .9em;
+        padding-bottom: 6em;
     }
 }

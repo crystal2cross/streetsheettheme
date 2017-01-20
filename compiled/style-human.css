@@ -339,6 +339,7 @@ big {
 --------------------------------------------------------------*/
 html {
   box-sizing: border-box;
+  background-color: #000;
 }
 
 *,
@@ -349,7 +350,7 @@ html {
 }
 
 body {
-  background: #fff;
+  background-color: #000;
   /* Fallback for when there is no custom background color defined. */
 }
 
@@ -888,6 +889,7 @@ a:hover, a:active {
   margin: .5em 0 1em 1em;
 }
 .streetsheet-breadcrumbs a {
+  padding: 0;
   text-decoration: none;
 }
 .streetsheet-breadcrumbs a:hover, .streetsheet-breadcrumbs a:focus {
@@ -1156,9 +1158,15 @@ a.back-to-top i {
   background-color: #eee;
 }
 
+.textwidget {
+  margin-bottom: -1em;
+}
+
 .widget {
   background-color: #fff;
   padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   /* Make sure select elements fit in widgets. */
 }
 .widget select {
@@ -1252,6 +1260,10 @@ a.back-to-top i {
 }
 
 /* Search widget. */
+.widget_search {
+  margin-top: 0em;
+}
+
 .widget_search .search-submit {
   display: none;
 }
@@ -1305,10 +1317,6 @@ a.back-to-top i {
 }
 
 /* Search widget */
-.widget_search {
-  margin-bottom: 1em;
-}
-
 .widget_search input[type="search"] {
   box-sizing: border-box;
   width: 100%;
@@ -1474,6 +1482,20 @@ a.back-to-top i {
   padding: .5em 1em;
 }
 
+.site-footer {
+  padding: 2em 0em 2em 0em;
+}
+
+.textwidget a {
+  font-family: "Fira Sans", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.textwidget a:hover, .textwidget a:focus {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 50em) {
   .site-content {
     padding: 1em;
@@ -1486,6 +1508,11 @@ a.back-to-top i {
 
   .widget_search input[type="search"], .widget_archive select {
     font-size: 1em;
+  }
+
+  .site-footer {
+    font-size: .9em;
+    padding-bottom: 6em;
   }
 }
 /*--------------------------------------------------------------
@@ -1565,13 +1592,13 @@ a.back-to-top i {
   margin: 0 0 1.5em;
 }
 
-.post, .page {
+.page, .type-post {
   background-color: #fff;
 }
-.post .site-content a, .page .site-content a {
+.page .site-content a, .type-post .site-content a {
   text-decoration: none;
 }
-.post .site-content a:hover, .post .site-content a:focus, .page .site-content a:hover, .page .site-content a:focus {
+.page .site-content a:hover, .page .site-content a:focus, .type-post .site-content a:hover, .type-post .site-content a:focus {
   text-decoration: underline;
 }
 
