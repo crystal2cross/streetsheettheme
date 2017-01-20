@@ -1018,7 +1018,7 @@ a.back-to-top i {
   }
 }
 @media screen and (min-width: 60em) {
-  .site-content {
+  .site-content, .streetsheet-footer-bar {
     padding-left: 3em !important;
     padding-right: 3em !important;
   }
@@ -1032,7 +1032,7 @@ a.back-to-top i {
   }
 }
 @media screen and (min-width: 70em) {
-  .site-content {
+  .site-content, .streetsheet-footer-bar {
     padding-left: 5em !important;
     padding-right: 5em !important;
   }
@@ -1046,7 +1046,7 @@ a.back-to-top i {
   }
 }
 @media screen and (min-width: 80em) {
-  .site-content {
+  .site-content, .streetsheet-footer-bar {
     padding-left: 7em !important;
     padding-right: 7em !important;
   }
@@ -1060,7 +1060,7 @@ a.back-to-top i {
   }
 }
 @media screen and (min-width: 90em) {
-  .site-content {
+  .site-content, .streetsheet-footer-bar {
     padding-left: 9em !important;
     padding-right: 9em !important;
   }
@@ -1074,7 +1074,7 @@ a.back-to-top i {
   }
 }
 @media screen and (min-width: 100em) {
-  .site-content {
+  .site-content, .streetsheet-footer-bar {
     padding-left: 12em !important;
     padding-right: 12em !important;
   }
@@ -1088,7 +1088,7 @@ a.back-to-top i {
   }
 }
 @media screen and (min-width: 110em) {
-  .site-content {
+  .site-content, .streetsheet-footer-bar {
     padding-left: 15em !important;
     padding-right: 15em !important;
   }
@@ -1102,7 +1102,7 @@ a.back-to-top i {
   }
 }
 @media screen and (min-width: 115em) {
-  .site-content {
+  .site-content, .streetsheet-footer-bar {
     padding-left: 18em !important;
     padding-right: 18em !important;
   }
@@ -1120,14 +1120,58 @@ a.back-to-top i {
   width: 100%;
   text-align: center;
   background-color: #000;
-  font-family: "Fira Sans", sans-serif;
-  color: #fff;
+  font-family: "Merriweather", serif;
+  color: #999;
   padding: 1em;
 }
 .site-footer a {
   font-weight: 500;
 }
+.site-footer hr {
+  clear: both;
+  border-top: 1px solid #999;
+}
 
+.streetsheet-footer-1,
+.streetsheet-footer-2,
+.streetsheet-footer-3 {
+  float: left;
+  width: 33.3%;
+  padding-left: 1em;
+  padding-bottom: 1em;
+  text-align: left;
+}
+.streetsheet-footer-1 b,
+.streetsheet-footer-2 b,
+.streetsheet-footer-3 b {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #fff;
+}
+.streetsheet-footer-1 i,
+.streetsheet-footer-2 i,
+.streetsheet-footer-3 i {
+  padding-right: .2em;
+}
+
+@media screen and (max-width: 60em) {
+  .streetsheet-footer-1,
+  .streetsheet-footer-2 {
+    width: 50%;
+  }
+
+  .streetsheet-footer-3 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 40em) {
+  .streetsheet-footer-1,
+  .streetsheet-footer-2,
+  .streetsheet-footer-3 {
+    width: 100%;
+  }
+}
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
