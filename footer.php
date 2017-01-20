@@ -23,14 +23,25 @@
                         San Francisco, CA 94102
                     </p>
                     <p>
-                        Call: (415) 346 - 3740 ext 309
+                        Call: (415) 346-3740 ext 309
                     </p>
                 </div>
                 <div class="streetsheet-footer-2">
-                    <b>NEWSLETTER</b>
-                    <p>
-                        Sign-up:
-                    </p>
+                    <b>NEWSLETTER SIGN-UP</b>
+                        <?php
+                            $args = array(  'prepend' => '', 
+                                            'showname' => true,
+                                            'nametxt' => '', 
+                                            'nameholder' => 'Name', 
+                                            'emailtxt' => '',
+                                            'emailholder' => 'Email', 
+                                            'showsubmit' => true, 
+                                            'submittxt' => 'Submit', 
+                                            'jsthanks' => true,
+                                            'thankyou' => 'Thank you for subscribing to our mailing list'
+                                         );
+                            echo smlsubform($args);
+                        ?>
                 </div>
                 <div class="streetsheet-footer-3">
                     <b>SOCIAL MEDIA</b>
@@ -44,7 +55,7 @@
                 <hr>
             </div>
             <div class="site-info">
-                    ©Copyright 2016 Street Sheet. All rights reserved.
+                ©Copyright 2016 Street Sheet. All rights reserved.<br>Website Designed & Developed by <a href="https://www.linkedin.com/in/crystalcross">Crystal Cross</a>
             </div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

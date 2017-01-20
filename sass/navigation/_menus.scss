@@ -295,7 +295,7 @@
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
 	float: left;
-	width: 33%;
+	width: 50%;
         color: #008EAC;
         font-family: 'FontAwesome';
         &:before {
@@ -313,7 +313,7 @@
 .posts-navigation .nav-previous-none,
 .post-navigation .nav-previous-none {
 	float: left;
-	width: 33%;
+	width: 50%;
         color: #eee;
 }
 
@@ -322,7 +322,7 @@
 .post-navigation .nav-next {
 	float: left;
 	text-align: right;
-	width: 33%;
+	width: 50%;
         color: #008EAC;
         font-family: 'FontAwesome';
         &:after {
@@ -334,14 +334,6 @@
             left: 1px;
             width: 27px;
         }
-}
-
-.comment-navigation .nav-home,
-.posts-navigation .nav-home,
-.post-navigation .nav-home {
-    float: left;
-    width: 33%;
-    text-align: center;
 }
 
 .comment-navigation .nav-home-only,

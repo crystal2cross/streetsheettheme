@@ -813,7 +813,7 @@ a:hover, a:active {
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
-  width: 33%;
+  width: 50%;
   color: #008EAC;
   font-family: 'FontAwesome';
 }
@@ -833,7 +833,7 @@ a:hover, a:active {
 .posts-navigation .nav-previous-none,
 .post-navigation .nav-previous-none {
   float: left;
-  width: 33%;
+  width: 50%;
   color: #eee;
 }
 
@@ -842,7 +842,7 @@ a:hover, a:active {
 .post-navigation .nav-next {
   float: left;
   text-align: right;
-  width: 33%;
+  width: 50%;
   color: #008EAC;
   font-family: 'FontAwesome';
 }
@@ -856,14 +856,6 @@ a:hover, a:active {
   top: 0;
   left: 1px;
   width: 27px;
-}
-
-.comment-navigation .nav-home,
-.posts-navigation .nav-home,
-.post-navigation .nav-home {
-  float: left;
-  width: 33%;
-  text-align: center;
 }
 
 .comment-navigation .nav-home-only,
@@ -1118,8 +1110,9 @@ a.back-to-top i {
   color: #999;
   padding: 1em;
 }
-.site-footer a {
-  font-weight: 500;
+.site-footer a, .site-footer a:hover, .site-footer a:focus, .site-footer a:active {
+  color: #008EAC;
+  font-weight: normal;
 }
 .site-footer hr {
   clear: both;
@@ -1147,6 +1140,42 @@ a.back-to-top i {
 .streetsheet-footer-2 i,
 .streetsheet-footer-3 i {
   padding-right: .2em;
+}
+.streetsheet-footer-1 .sml_name, .streetsheet-footer-1 .sml_email, .streetsheet-footer-1 .sml_submit,
+.streetsheet-footer-2 .sml_name,
+.streetsheet-footer-2 .sml_email,
+.streetsheet-footer-2 .sml_submit,
+.streetsheet-footer-3 .sml_name,
+.streetsheet-footer-3 .sml_email,
+.streetsheet-footer-3 .sml_submit {
+  margin-bottom: 0em;
+}
+.streetsheet-footer-1 .sml_name input[type="submit"], .streetsheet-footer-1 .sml_email input[type="submit"], .streetsheet-footer-1 .sml_submit input[type="submit"],
+.streetsheet-footer-2 .sml_name input[type="submit"],
+.streetsheet-footer-2 .sml_email input[type="submit"],
+.streetsheet-footer-2 .sml_submit input[type="submit"],
+.streetsheet-footer-3 .sml_name input[type="submit"],
+.streetsheet-footer-3 .sml_email input[type="submit"],
+.streetsheet-footer-3 .sml_submit input[type="submit"] {
+  border: 0px;
+  background-color: #008EAC;
+  color: #fff;
+  padding: .7em 1em .7em 1em;
+  margin-bottom: 1em;
+}
+.streetsheet-footer-1 .sml_name input[type="text"], .streetsheet-footer-1 .sml_email input[type="text"], .streetsheet-footer-1 .sml_submit input[type="text"],
+.streetsheet-footer-2 .sml_name input[type="text"],
+.streetsheet-footer-2 .sml_email input[type="text"],
+.streetsheet-footer-2 .sml_submit input[type="text"],
+.streetsheet-footer-3 .sml_name input[type="text"],
+.streetsheet-footer-3 .sml_email input[type="text"],
+.streetsheet-footer-3 .sml_submit input[type="text"] {
+  padding: .5em 1em;
+  border: 1px solid #c3c3c3;
+  border-radius: 0;
+  background-color: #000;
+  color: #fff;
+  font-size: 1em;
 }
 
 @media screen and (max-width: 60em) {

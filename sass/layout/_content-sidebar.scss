@@ -114,8 +114,9 @@
     font-family: $font__main;
     color: #999;
     padding: 1em;
-    a {
-        font-weight: 500;
+    a, a:hover, a:focus, a:active {
+        color: #008EAC;
+        font-weight: normal;
     }
     hr {
         clear: both;
@@ -139,6 +140,24 @@
     }
     i {
         padding-right: .2em;
+    }
+    .sml_name, .sml_email, .sml_submit {
+        margin-bottom: 0em;
+        input[type="submit"] {
+            border: 0px;
+            background-color: #008EAC;
+            color: #fff;
+            padding: .7em 1em .7em 1em;
+            margin-bottom: 1em;
+        }
+        input[type="text"] {
+            padding: .5em 1em;
+            border: 1px solid #c3c3c3;
+            border-radius: 0;
+            background-color: #000;
+            color: #fff;
+            font-size: 1em;
+        }
     }
 }
 
