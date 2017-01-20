@@ -1615,6 +1615,21 @@ a.back-to-top i {
   text-decoration: underline;
 }
 
+.streetsheet-social-links-container {
+  border-top: 1px solid #c3c3c3;
+  padding-top: 1em;
+  margin-top: 1em;
+}
+
+.streetsheet-social-links-label {
+  float: left;
+  padding-right: .5em;
+  padding-bottom: 1em;
+  font-family: "Fira Sans",sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
