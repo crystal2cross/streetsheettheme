@@ -15,9 +15,7 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'streetsheettheme' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'streetsheettheme' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'streetsheettheme' ), 'streetsheettheme', '<a href="http://www.streetsheet.org/" rel="designer">Crystal Cross</a>' ); ?>
+                        ©Copyright 2016 Street Sheet. All rights reserved.
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
