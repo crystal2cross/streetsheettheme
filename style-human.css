@@ -1289,7 +1289,6 @@ a.back-to-top i {
   display: inline-block;
   position: absolute;
   margin-left: 1em;
-  padding-top: .5em;
   left: 0;
 }
 
@@ -1298,11 +1297,11 @@ a.back-to-top i {
   display: inline-block;
   position: absolute;
   margin-right: 1em;
-  padding-top: .5em;
   right: 0;
 }
 .streetsheet-social-media-links i {
   padding-left: .2em;
+  padding-top: .7em;
 }
 
 .streetsheet-social-media-links-mobile {
