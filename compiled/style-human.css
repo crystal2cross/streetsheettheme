@@ -1419,7 +1419,7 @@ a.back-to-top i {
   position: relative;
 }
 
-.widget_archive select:before {
+.widget_archive select:after {
   content: '\f0d7';
   font-family: FontAwesome;
   color: #000;
