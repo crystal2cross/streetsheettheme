@@ -62,7 +62,7 @@
 		</div>
                 
                 <div class="streetsheet-social-media-links-mobile">
-                    <a href="https://www.facebook.com/streetsheetsf/ " target="_blank"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/streetsheetsf/ " target="_blank"><i class="fa fa-facebook-square fa-lg" aria-hidden="true" style="margin-right:.2em"></i></a>
                     <a href="https://twitter.com/TheCoalitionSF" target="_blank"><i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i></a>
                 </div>
                 
