@@ -614,8 +614,8 @@ a:hover, a:active {
   box-sizing: content-box;
   padding: 0;
   font-family: 'FontAwesome';
-  background-color: #000;
-  border: 1px solid #fff;
+  background-color: transparent;
+  border: 0px;
   content: "";
   color: #fff;
   text-transform: lowercase;
@@ -632,9 +632,11 @@ a:hover, a:active {
   width: 27px;
 }
 
+.dropdown-toggle:active,
 .dropdown-toggle:hover,
 .dropdown-toggle:focus {
   color: #fff;
+  border: 0px;
 }
 
 .dropdown-toggle.toggle-on:after {
@@ -745,7 +747,7 @@ a:hover, a:active {
 
   /* Add an outline to the drop-down menus */
   .main-navigation ul ul {
-    outline: 1px solid #333;
+    outline: 0px;
   }
 
   /* Left-align drop-down menu items */
@@ -781,6 +783,7 @@ a:hover, a:active {
     z-index: 11;
     margin-left: 0;
     background: #008EAC;
+    margin-top: 0.5em;
   }
 
   .main-navigation ul ul ul.toggled-on {
