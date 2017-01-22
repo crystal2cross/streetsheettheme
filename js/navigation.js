@@ -84,21 +84,38 @@
 		container.find( '.menu-item-has-children > a, .page_item_has_children > a' ).after( '<button class="dropdown-toggle" aria-expanded="false">' + screenReaderText.expand + '</button>' );
 
 		// Toggle buttons and submenu items with active children menu items.
-		container.find( '.current-menu-ancestor > button' ).addClass( 'toggle-on' );
-		container.find( '.current-menu-ancestor > .sub-menu' ).addClass( 'toggled-on' );
+//		container.find( '.current-menu-ancestor > button' ).addClass( 'toggle-on' );
+//		container.find( '.current-menu-ancestor > .sub-menu' ).addClass( 'toggled-on' );
 
 		container.find( '.dropdown-toggle' ).click( function( e ) {
-			var _this = $( this );
+                        $('.dropdown-toggle').not(this).removeClass( 'toggle-on' );
+                        $('.dropdown-toggle').not(this).next( '.children, .sub-menu' ).removeClass( 'toggled-on' );
+
+                        var _this = $(this);
 			e.preventDefault();
 			_this.toggleClass( 'toggle-on' );
 			_this.next( '.children, .sub-menu' ).toggleClass( 'toggled-on' );
 			_this.attr( 'aria-expanded', _this.attr( 'aria-expanded' ) === 'false' ? 'true' : 'false' );
-			_this.html( _this.html() === screenReaderText.expand ? screenReaderText.collapse : screenReaderText.expand );
+			_this.html( _this.html() === screenReaderText.expand ? screenReaderText.collapse : screenReaderText.expand );                     
 		} );
+                
+//                container.find( 'li.menu-item-has-children' ).click( function( e ) {
+//                    console.log('event triggered');
+//                        $('.dropdown-toggle').not( $(this).find('.dropdown-toggle') ).removeClass( 'toggle-on' );
+//                        $('.dropdown-toggle').not( $(this).find('.dropdown-toggle') ).next( '.children, .sub-menu' ).removeClass( 'toggled-on' );
+//
+//                    
+//                        var _this = $(this);
+//			e.preventDefault();
+//			_this.find('.dropdown-toggle').addClass( 'toggle-on' );
+//			_this.find('.dropdown-toggle').next( '.children, .sub-menu' ).addClass( 'toggled-on' );
+//			_this.find('.dropdown-toggle').attr( 'aria-expanded', _this.find('.dropdown-toggle').attr( 'aria-expanded' ) === 'false' ? 'true' : 'false' );
+//			_this.find('.dropdown-toggle').html( _this.find('.dropdown-toggle').html() === screenReaderText.expand ? screenReaderText.collapse : screenReaderText.expand );                     
+//		} );
 	}
 	initMainNavigation( $( '.main-navigation' ) );
 
-	// Re-initialize the main navigation when it is updated, persisting any existing submenu expanded states.
+    //	 Re-initialize the main navigation when it is updated, persisting any existing submenu expanded states.
 	$( document ).on( 'customize-preview-menu-refreshed', function( e, params ) {
 		if ( 'primary' === params.wpNavMenuArgs.theme_location ) {
 			initMainNavigation( params.newContainer );
@@ -133,4 +150,13 @@
 		}
 		position = $(this).scrollTop();
 	});
+        
+        $(document).click(function(e) {
+            var target = e.target;
+
+            if (!$(target).is('.menu-primary-container li') && !$(target).is('.menu-primary-container button')) {
+                $('.dropdown-toggle').removeClass( 'toggle-on' );
+                $('.dropdown-toggle').next( '.children, .sub-menu' ).removeClass( 'toggled-on' );
+            }
+        });
 } )( jQuery );

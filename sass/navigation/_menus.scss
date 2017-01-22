@@ -92,6 +92,7 @@
 	content: "";
 	color: #fff;
 	text-transform: lowercase; /* Stop screen readers from reading the text as capital letters */
+        outline:none;
 }
 
 .dropdown-toggle:after {
@@ -119,6 +120,7 @@
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
+        outline:none;
 }
 
 .menu-toggle {

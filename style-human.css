@@ -618,6 +618,7 @@ a:hover, a:active {
   color: #fff;
   text-transform: lowercase;
   /* Stop screen readers from reading the text as capital letters */
+  outline: none;
 }
 
 .dropdown-toggle:after {
@@ -645,6 +646,7 @@ a:hover, a:active {
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
+  outline: none;
 }
 
 .menu-toggle {
