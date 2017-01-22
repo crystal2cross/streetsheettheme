@@ -124,6 +124,51 @@
     }
 }
 
+.streetsheet-staff {
+    float: left;
+    width:33.3%;
+    padding: 1em;
+    text-align:center
+    img {
+        margin-bottom: 1em;
+    }
+    .streetsheet-staff-name {
+        display: inline-block;
+        color: #008eac;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: .2em;
+        width: 100%;
+        text-align:center
+    }
+    .streetsheet-staff-title {
+        display: inline-block;
+        font-family: 'Fira Sans',sans-serif;
+        font-weight: bold;
+        margin-bottom: .5em;
+        width: 100%;
+        text-align:center
+    }
+    .streetsheet-staff-email {
+        display: inline-block;
+        font-family: 'Fira Sans',sans-serif;
+        width: 100%;
+        text-align:center
+    }
+}
+
+@media screen and (max-width: 60em) {
+    .streetsheet-staff {
+        width:50%;
+    }
+}
+
+@media screen and (max-width: 40em) {
+    .streetsheet-staff  {
+        width:100%;
+    }
+}
+
 .streetsheet-footer-1,
 .streetsheet-footer-2,
 .streetsheet-footer-3 {
