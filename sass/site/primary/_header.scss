@@ -49,6 +49,13 @@
 .streetsheet-header-links {
     background-color: #fff;
     position: relative;
+    a,
+    a:active,
+    a:hover,
+    a:focus {
+        color: #000 !important;
+        text-decoration: none;
+    }
 }
 
 .streetsheet-read-issue-link {
@@ -74,13 +81,23 @@
 .streetsheet-social-media-links-mobile {
     display: none;
     text-align: center;
-    i {
+    a,
+    a:active,
+    a:hover,
+    a:focus {
+        color: #000 !important;
+        text-decoration: none;
+    }
+    a {
         padding: 0 .5em 0em .5em;
         margin-bottom: .7em;
         border-right: 1px solid #000;
     }
-    i:last-child {
+    a:last-child {
         border: 0px;
+    }
+    i {
+        margin-bottom: .7em;
     }
 }
 

@@ -7,6 +7,16 @@
     padding: 2em 0em 2em 0em;
 }
 
+.streetsheet-footer-3 {
+    a,
+    a:active,
+    a:hover,
+    a:focus {
+        color: #999 !important;
+        text-decoration: none;
+    }
+}
+
 .textwidget a {
     font-family: $font__headings;
     text-decoration: none;

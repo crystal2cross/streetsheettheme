@@ -22,10 +22,8 @@
 <div class="streetsheet-header-links">
     <!--<div class="streetsheet-read-issue-link">READ ISSUE LINK</div>-->
     <div class="streetsheet-social-media-links">
-        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-        <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-        <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
-        <i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i>
+        <a href="https://www.facebook.com/streetsheetsf/ " target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/TheCoalitionSF" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
     </div>
 </div>
 
@@ -64,10 +62,8 @@
 		</div>
                 
                 <div class="streetsheet-social-media-links-mobile">
-                    <i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
-                    <i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i>
-                    <i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i>
-                    <i class="fa fa-youtube-square fa-lg" aria-hidden="true"></i>
+                    <a href="https://www.facebook.com/streetsheetsf/ " target="_blank"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/TheCoalitionSF" target="_blank"><i class="fa fa-twitter-square fa-lg" aria-hidden="true"></i></a>
                 </div>
                 
 		<nav id="site-navigation" class="main-navigation" role="navigation">

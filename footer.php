@@ -46,10 +46,8 @@
                 <div class="streetsheet-footer-3">
                     <b>SOCIAL MEDIA</b>
                     <p>
-                        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-                        <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-                        <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
-                        <i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i>
+                        <a href="https://www.facebook.com/streetsheetsf/ " target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/TheCoalitionSF" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
                     </p>
                 </div>
                 <hr>

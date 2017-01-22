@@ -1283,6 +1283,13 @@ a.back-to-top i {
   background-color: #fff;
   position: relative;
 }
+.streetsheet-header-links a,
+.streetsheet-header-links a:active,
+.streetsheet-header-links a:hover,
+.streetsheet-header-links a:focus {
+  color: #000 !important;
+  text-decoration: none;
+}
 
 .streetsheet-read-issue-link {
   text-align: left;
@@ -1308,13 +1315,23 @@ a.back-to-top i {
   display: none;
   text-align: center;
 }
-.streetsheet-social-media-links-mobile i {
+.streetsheet-social-media-links-mobile a,
+.streetsheet-social-media-links-mobile a:active,
+.streetsheet-social-media-links-mobile a:hover,
+.streetsheet-social-media-links-mobile a:focus {
+  color: #000 !important;
+  text-decoration: none;
+}
+.streetsheet-social-media-links-mobile a {
   padding: 0 .5em 0em .5em;
   margin-bottom: .7em;
   border-right: 1px solid #000;
 }
-.streetsheet-social-media-links-mobile i:last-child {
+.streetsheet-social-media-links-mobile a:last-child {
   border: 0px;
+}
+.streetsheet-social-media-links-mobile i {
+  margin-bottom: .7em;
 }
 
 @media screen and (max-width: 60em) {
@@ -1658,6 +1675,14 @@ a.back-to-top i {
 
 .site-footer {
   padding: 2em 0em 2em 0em;
+}
+
+.streetsheet-footer-3 a,
+.streetsheet-footer-3 a:active,
+.streetsheet-footer-3 a:hover,
+.streetsheet-footer-3 a:focus {
+  color: #999 !important;
+  text-decoration: none;
 }
 
 .textwidget a {
