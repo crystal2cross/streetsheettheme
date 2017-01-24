@@ -1410,6 +1410,10 @@ img {
   margin-bottom: -1em;
 }
 
+.widget_text {
+  margin-top: 0em;
+}
+
 .widget {
   background-color: #fff;
   padding: 1em;
@@ -1812,7 +1816,6 @@ img {
 .entry-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-style: italic;
   font-size: 2em;
   color: #008EAC;
 }
