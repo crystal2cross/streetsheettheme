@@ -65,7 +65,9 @@ include "wp-load.php"; ?>
 
 			<?php endwhile; ?>
 
-			<?php the_posts_navigation(); ?>
+			<?php the_posts_navigation( array(
+				'prev_text'          => __( ' Older', 'streetsheet' ),
+				'next_text'          => __( 'Newer ', 'streetsheet' ) )); ?>
 
 		<?php else : ?>
 

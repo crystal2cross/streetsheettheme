@@ -99,7 +99,7 @@ function streetsheettheme_widgets_init() {
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'after_title'   => '</h2><div class="block_content">',
 	) );
 }
 add_action( 'widgets_init', 'streetsheettheme_widgets_init' );
@@ -199,13 +199,6 @@ function streetsheet_flexslider() {
 
 add_action('init', 'streetsheet_flexslider');
 
-function my_limit_archives( $args ) {
-    return $args;
-}
- 
-add_filter( 'widget_archives_args', 'my_limit_archives' );
-add_filter( 'widget_archives_dropdown_args', 'my_limit_archives' );
-
 add_filter( 'the_author', 'guest_author_name' );
 add_filter( 'get_the_author_display_name', 'guest_author_name' );
  
@@ -289,3 +282,26 @@ endif;
 
 remove_filter('get_the_excerpt', 'wp_trim_excerpt');
 add_filter('get_the_excerpt', 'wpse_custom_wp_trim_excerpt'); 
+
+add_filter( 'next_post_link' , 'my_nav_buttons_text' , 10, 4);
+add_filter( 'previous_post_link' , 'my_nav_buttons_text' , 10, 4);
+
+function my_nav_buttons_text($output, $format, $link, $post ) {
+    switch ( current_filter() ) {
+            case 'previous_post_link':
+                    $text = ' Older';
+                    $rel = 'prev';
+                    break;
+
+            case 'next_post_link':
+                    $text = 'Newer ';
+                    $rel = 'next';
+                    break;
+    }
+    if ( $rel === 'prev' ) {
+        return sprintf('<div class="nav-previous"><a href="%1$s" rel="%3$s" rel="nofollow">%2$s</a></div>' , get_permalink( $post ), $text, $rel );
+    }
+    else if ( $rel === 'next' ) {
+        return sprintf('<div class="nav-next"><a href="%1$s" rel="%3$s" rel="nofollow">%2$s</a></div>' , get_permalink( $post ), $text, $rel );
+    }
+}

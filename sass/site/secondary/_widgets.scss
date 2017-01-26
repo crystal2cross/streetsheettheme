@@ -89,11 +89,11 @@
 .widget_archive .widget-title {
 }
 
-.streetsheet-styled-select {
+.widget_archive .block_content {
     position: relative;
 }
 
-.widget_archive select:after {
+.widget_archive .block_content:before {
     content: '\f0d7';
     font-family: FontAwesome;
     color: #000;

@@ -28,7 +28,9 @@ get_header(); ?>
 
 			endwhile;
 
-			the_posts_navigation();
+			the_posts_navigation( array(
+				'prev_text'          => __( ' Older', 'streetsheet' ),
+				'next_text'          => __( 'Newer ', 'streetsheet' ) ));
 
 		else :
 
