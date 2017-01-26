@@ -305,3 +305,12 @@ function my_nav_buttons_text($output, $format, $link, $post ) {
         return sprintf('<div class="nav-next"><a href="%1$s" rel="%3$s" rel="nofollow">%2$s</a></div>' , get_permalink( $post ), $text, $rel );
     }
 }
+
+function SearchFilter($query) {
+    if ($query->is_search) {
+        $query->set('post_type', 'post');
+    }
+    return $query;
+}
+
+add_filter('pre_get_posts','SearchFilter');
