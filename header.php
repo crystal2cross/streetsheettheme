@@ -71,6 +71,12 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'menu_class' => 'nav-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
+        
+        <?php // Check if this is the front page and that it is not page 2 or higher
+        if ( is_front_page() && !is_paged() ) {
+            // Add featured content slider
+            get_template_part( 'featureflexslider' );
+        } ?>
 
 	<div id="content" class="site-content">
             
