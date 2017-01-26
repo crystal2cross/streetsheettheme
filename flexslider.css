@@ -43,6 +43,7 @@
 .flexslider {
   margin: 0;
   padding: 0;
+  position: relative;
 }
 .flexslider .slides > li {
   display: none;
@@ -50,6 +51,7 @@
 }
 .flexslider .slides img {
   width: 100%;
+  height: 400px;
   display: block;
 }
 .flexslider .slides:after {
@@ -73,7 +75,7 @@ html[xmlns] .flexslider .slides {
  * DEFAULT THEME
  * ====================================================================================================================*/
 .flexslider {
-  margin: 0 0 42px;
+  margin: 0;
   background: #000;
   position: relative;
   zoom: 1;
@@ -82,7 +84,7 @@ html[xmlns] .flexslider .slides {
   zoom: 1;
 }
 .flexslider .slides img {
-  height: auto;
+  //height: auto;
   -moz-user-select: none;
 }
 .flex-viewport {
@@ -182,15 +184,16 @@ html[xmlns] .flexslider .slides {
   width: 100%;
   position: absolute;
   text-align: center;
+  z-index: 10;
 }
 @media screen and (max-width: 40em) {
     .flex-control-nav {
-        bottom: -36px;
+        bottom: 35px;
     }
 }
 @media screen and (min-width: 40em) {
     .flex-control-nav {
-        bottom: -40px;
+        bottom: 35px;
     }
 }
 .flex-control-nav li {
@@ -232,7 +235,7 @@ html[xmlns] .flexslider .slides {
 }
 .flex-control-thumbs img {
   width: 100%;
-  height: auto;
+  //height: auto;
   display: block;
   opacity: .7;
   cursor: pointer;
@@ -261,8 +264,10 @@ html[xmlns] .flexslider .slides {
 }
 
 .flex-caption {
-    padding: 1em 1em 0em 1em;
     color: #fff;
+    position: absolute;
+    top: 40%;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .flex-caption b {
@@ -275,6 +280,12 @@ html[xmlns] .flexslider .slides {
 @media screen and (min-width: 50em) {
     .flex-caption b {
         font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 40em) {
+    .flex-caption {
+        top: 20%;
     }
 }
 
