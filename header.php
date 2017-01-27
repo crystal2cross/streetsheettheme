@@ -76,7 +76,7 @@
 		</nav><!-- #site-navigation -->
                 
 	</header><!-- #masthead -->
-        
+
         <div class="after-header" style="position: relative">
             <div class="streetsheet-search-bar">
                 <?php get_search_form(); ?>

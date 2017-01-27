@@ -229,6 +229,9 @@ html[xmlns] .flexslider .slides {
 }
 .flex-control-paging li a.flex-active {
   background: #fff;
+}
+.flex-control-paging li a.flex-active {
+  background: #fff;
   cursor: default;
 }
 .flex-control-thumbs {
