@@ -20,11 +20,11 @@
 </head>
 
 <div class="streetsheet-header-links">
-    <div class="streetsheet-read-issue-link">
-        <a href="http://192.168.1.117:8888/print-issue-archive/">
-            <img style="width:130px;height:130px;margin-top:1.3em;" src="http://192.168.1.117:8888/wp-content/uploads/2017/01/issues-icon.png">
+    <!--<div class="streetsheet-read-issue-link">
+        <a href="http://www.streetsheet.org/?page_id=2367">
+            <img style="width:130px;height:130px;margin-top:1.3em;" src="http://www.streetsheet.org/wp-content/uploads/2017/01/issues-icon.png">
         </a>
-    </div>
+    </div>-->
     <div class="streetsheet-social-media-links">
         <a href="https://www.facebook.com/streetsheetsf/ " target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
         <a href="https://twitter.com/TheCoalitionSF" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
