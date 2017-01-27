@@ -99,6 +99,10 @@
 			_this.html( _this.html() === screenReaderText.expand ? screenReaderText.collapse : screenReaderText.expand );                     
 		} );
                 
+                container.find('.streetsheet-search-button').click( function(e) {
+                   $('.streetsheet-search-bar').toggleClass('toggle-on');
+                });
+                
 //                container.find( 'li.menu-item-has-children' ).click( function( e ) {
 //                    console.log('event triggered');
 //                        $('.dropdown-toggle').not( $(this).find('.dropdown-toggle') ).removeClass( 'toggle-on' );

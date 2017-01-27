@@ -20,7 +20,11 @@
 </head>
 
 <div class="streetsheet-header-links">
-    <!--<div class="streetsheet-read-issue-link">READ ISSUE LINK</div>-->
+    <!--<div class="streetsheet-read-issue-link">
+        <a href="http://192.168.1.117:8888/print-issue-archive/">
+            <img style="width:150px;height:150px;margin-top:1.3em;" src="http://192.168.1.117:8888/wp-content/uploads/2017/01/issues-icon.png">
+        </a>
+    </div>-->
     <div class="streetsheet-social-media-links">
         <a href="https://www.facebook.com/streetsheetsf/ " target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
         <a href="https://twitter.com/TheCoalitionSF" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
@@ -70,13 +74,20 @@
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'streetsheettheme' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'menu_class' => 'nav-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
+                
 	</header><!-- #masthead -->
         
-        <?php // Check if this is the front page and that it is not page 2 or higher
-        if ( is_front_page() && !is_paged() ) {
-            // Add featured content slider
-            get_template_part( 'featureflexslider' );
-        } ?>
+        <div class="after-header" style="position: relative">
+            <div class="streetsheet-search-bar">
+                <?php get_search_form(); ?>
+            </div>
+
+            <?php // Check if this is the front page and that it is not page 2 or higher
+            if ( is_front_page() && !is_paged() ) {
+                // Add featured content slider
+                get_template_part( 'featureflexslider' );
+            } ?>
+        </div>
 
 	<div id="content" class="site-content">
             
