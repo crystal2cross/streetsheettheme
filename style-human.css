@@ -1911,6 +1911,29 @@ img {
   font-weight: 700;
 }
 
+.no-results {
+  background-color: #fff;
+  padding: 1em;
+}
+.no-results header {
+  margin-top: -1em;
+}
+.no-results input.search-field {
+  padding: .5em 1em;
+  border: 1px solid #c3c3c3;
+  border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+.no-results input.search-submit {
+  border: 2px solid #008EAC;
+  background-color: #008EAC;
+  color: #fff;
+  font-weight: bold;
+}
+
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
