@@ -1746,6 +1746,22 @@ img {
   text-decoration: underline;
 }
 
+.streetsheet-wgm-description {
+  font-size: .9em;
+}
+.streetsheet-wgm-description a {
+  font-family: 'Merriweather',serif !important;
+  text-transform: none !important;
+  font-size: .9em !important;
+  font-weight: normal !important;
+}
+
+.streetsheet-wgm-heading {
+  font-family: 'Fira Sans',sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/

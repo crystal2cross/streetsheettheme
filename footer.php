@@ -53,7 +53,7 @@
                 <hr>
             </div>
             <div class="site-info">
-                ©Copyright 2016 Street Sheet. All rights reserved.<br>Website Designed & Developed by <a href="https://www.linkedin.com/in/crystalcross">Crystal Cross</a>
+                ©Copyright 2017 Street Sheet. All rights reserved.<br>Website Designed & Developed by <a href="https://www.linkedin.com/in/crystalcross">Crystal Cross</a>
             </div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

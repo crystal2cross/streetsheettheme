@@ -323,3 +323,21 @@
 .widget_streetsheet_recent_posts a:focus .title {
 	text-decoration: underline;
 }
+
+// Workgroup Meetings widget
+
+.streetsheet-wgm-description {
+    font-size: .9em;
+    a {
+        font-family: 'Merriweather',serif !important;
+        text-transform: none !important;
+        font-size: .9em !important;
+        font-weight: normal !important;
+    }
+}
+
+.streetsheet-wgm-heading {
+    font-family: 'Fira Sans',sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
