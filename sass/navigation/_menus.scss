@@ -376,6 +376,13 @@
     }
 }
 
+@media screen and (max-width: 60em) {
+    .streetsheet-donate {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+}
+
 .streetsheet-donate a {
     background-color: #00AC5C;
     text-transform: uppercase;
