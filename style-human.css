@@ -1193,12 +1193,6 @@ img {
   width: 100%;
   text-align: center;
 }
-.streetsheet-staff .streetsheet-staff-email {
-  display: inline-block;
-  font-family: 'Fira Sans',sans-serif;
-  width: 100%;
-  text-align: center;
-}
 
 @media screen and (max-width: 60em) {
   .streetsheet-staff {

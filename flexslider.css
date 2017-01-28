@@ -136,11 +136,11 @@ html[xmlns] .flexslider .slides {
 }
 .flex-direction-nav .flex-prev {
   left: 0;
-  top: 70%;
+  top: 80%;
 }
 .flex-direction-nav .flex-next {
   right: 0;
-  top: 70%;
+  top: 80%;
   text-align: right;
 }
 .flexslider:hover .flex-direction-nav .flex-prev {

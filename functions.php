@@ -110,7 +110,7 @@ add_action( 'widgets_init', 'streetsheettheme_widgets_init' );
 function streetsheettheme_scripts() {
 	wp_enqueue_style( 'streetsheettheme-style', get_stylesheet_uri() );
         
-        // Add local fonts: Fira Sans, Merriweather, Domine
+        // Add local fonts: Fira Sans, Merriweather, Domine, Montserrat
         wp_enqueue_style( 'streetsheettheme-local-fonts', get_template_directory_uri() . '/fonts/custom-fonts.css' );
         
         // Add FontAwesome
