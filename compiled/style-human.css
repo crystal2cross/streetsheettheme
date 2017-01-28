@@ -267,7 +267,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: "Merriweather", serif;
+  font-family: "Roboto Slab", serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
@@ -1160,7 +1160,7 @@ a.back-to-top i {
   width: 100%;
   text-align: center;
   background-color: #000;
-  font-family: "Merriweather", serif;
+  font-family: "Roboto Slab", serif;
   color: #999;
   padding: 1em;
 }
@@ -1594,7 +1594,7 @@ img {
 
 .rssSummary {
   padding: .5em 0;
-  font-family: "Merriweather", serif;
+  font-family: "Roboto Slab", serif;
 }
 
 /* Search widget */
@@ -1705,7 +1705,7 @@ img {
 .widget_streetsheet_recent_comments .excerpt {
   margin-top: 0;
   margin-bottom: .8em;
-  font-family: "Merriweather", serif;
+  font-family: "Roboto Slab", serif;
 }
 
 .widget_streetsheet_recent_comments .excerpt::before {
@@ -1760,7 +1760,7 @@ img {
   font-size: .9em;
 }
 .streetsheet-wgm-description a {
-  font-family: 'Merriweather',serif !important;
+  font-family: 'Roboto Slab',serif !important;
   text-transform: none !important;
   font-size: .9em !important;
   font-weight: normal !important;
