@@ -110,7 +110,10 @@
 }
 
 .widget_search .search-submit {
-    display: none;
+    border: 2px solid #008EAC;
+    background-color: #008EAC;
+    color: #fff;
+    margin-top: .9em;
 }
 
 /* Pages and Menu widgets */

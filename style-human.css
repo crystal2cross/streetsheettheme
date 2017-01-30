@@ -418,30 +418,13 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 3px solid;
+  border: 0px solid;
   border-color: #000;
   border-radius: 0;
   background: #fff;
   color: #000;
   font-family: 'Fira Sans', sans-serif;
-  padding: .6em 1em .4em;
-}
-button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover {
-  border-color: #000;
-  color: #fff;
-}
-button:active, button:focus,
-input[type="button"]:active,
-input[type="button"]:focus,
-input[type="reset"]:active,
-input[type="reset"]:focus,
-input[type="submit"]:active,
-input[type="submit"]:focus {
-  border-color: #000;
-  color: #fff;
+  padding: .7em 1em .7em 1em;
 }
 
 input[type="text"],
@@ -920,8 +903,8 @@ a:hover, a:active {
 }
 
 a.back-to-top {
-  width: 46px;
-  height: 46px;
+  width: 52px;
+  height: 52px;
   position: fixed;
   z-index: 999;
   right: 1.1em;
@@ -1164,7 +1147,7 @@ a.back-to-top i {
 }
 .site-footer hr {
   clear: both;
-  border-top: 1px solid #999;
+  background-color: #999;
 }
 
 .streetsheet-staff {
@@ -1534,7 +1517,10 @@ img {
 }
 
 .widget_search .search-submit {
-  display: none;
+  border: 2px solid #008EAC;
+  background-color: #008EAC;
+  color: #fff;
+  margin-top: .9em;
 }
 
 /* Pages and Menu widgets */
@@ -1946,7 +1932,7 @@ img {
   border: 2px solid #008EAC;
   background-color: #008EAC;
   color: #fff;
-  font-weight: bold;
+  margin-left: .5em;
 }
 
 /*--------------------------------------------------------------

@@ -2,22 +2,18 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-        border: 3px solid;
+        border: 0px solid;
 	border-color: #000;
 	border-radius: 0;
 	background: #fff;
 	color: #000;
 	font-family: 'Fira Sans', sans-serif;
-	padding: .6em 1em .4em;
+	padding: .7em 1em .7em 1em;
 
 	&:hover {
-		border-color: #000;
-                color: #fff;
         }
 
 	&:active,
 	&:focus {
-                border-color: #000;
-                color: #fff;
 	}
 }
