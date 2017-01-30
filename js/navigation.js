@@ -83,39 +83,39 @@
 		// Add dropdown toggle that display child menu items.
 		container.find( '.menu-item-has-children > a, .page_item_has_children > a' ).after( '<button class="dropdown-toggle" aria-expanded="false">' + screenReaderText.expand + '</button>' );
 
-		// Toggle buttons and submenu items with active children menu items.
+//		// Toggle buttons and submenu items with active children menu items.
 //		container.find( '.current-menu-ancestor > button' ).addClass( 'toggle-on' );
 //		container.find( '.current-menu-ancestor > .sub-menu' ).addClass( 'toggled-on' );
 
-		container.find( '.dropdown-toggle' ).click( function( e ) {
-                        $('.dropdown-toggle').not(this).removeClass( 'toggle-on' );
-                        $('.dropdown-toggle').not(this).next( '.children, .sub-menu' ).removeClass( 'toggled-on' );
+//		container.find( '.dropdown-toggle' ).click( function( e ) {
+//                        $('.dropdown-toggle').not(this).removeClass( 'toggle-on' );
+//                        $('.dropdown-toggle').not(this).next( '.children, .sub-menu' ).removeClass( 'toggled-on' );
+//
+//                        var _this = $(this);
+//			e.preventDefault();
+//			_this.toggleClass( 'toggle-on' );
+//			_this.next( '.children, .sub-menu' ).toggleClass( 'toggled-on' );
+//			_this.attr( 'aria-expanded', _this.attr( 'aria-expanded' ) === 'false' ? 'true' : 'false' );
+//			_this.html( _this.html() === screenReaderText.expand ? screenReaderText.collapse : screenReaderText.expand );                     
+//		} );
 
-                        var _this = $(this);
-			e.preventDefault();
-			_this.toggleClass( 'toggle-on' );
-			_this.next( '.children, .sub-menu' ).toggleClass( 'toggled-on' );
-			_this.attr( 'aria-expanded', _this.attr( 'aria-expanded' ) === 'false' ? 'true' : 'false' );
-			_this.html( _this.html() === screenReaderText.expand ? screenReaderText.collapse : screenReaderText.expand );                     
+		$( '.menu-item-has-children' ).on('click', function(e) {
+                    if ($(e.target).attr('href') === undefined) {
+                        $('.dropdown-toggle').not($(this).find('.dropdown-toggle')).removeClass( 'toggle-on' );
+                        $('.dropdown-toggle').not($(this).find('.dropdown-toggle')).next( '.children, .sub-menu' ).removeClass( 'toggled-on' );
+
+                        var _this = $(this).find('.dropdown-toggle');
+                        e.preventDefault();
+                        _this.toggleClass( 'toggle-on' );
+                        _this.next( '.children, .sub-menu' ).toggleClass( 'toggled-on' );
+                        _this.attr( 'aria-expanded', _this.attr( 'aria-expanded' ) === 'false' ? 'true' : 'false' );
+                        _this.html( _this.html() === screenReaderText.expand ? screenReaderText.collapse : screenReaderText.expand );
+                    }
 		} );
                 
                 container.find('.streetsheet-search-button').click( function(e) {
                    $('.streetsheet-search-bar').toggleClass('toggle-on');
                 });
-                
-//                container.find( 'li.menu-item-has-children' ).click( function( e ) {
-//                    console.log('event triggered');
-//                        $('.dropdown-toggle').not( $(this).find('.dropdown-toggle') ).removeClass( 'toggle-on' );
-//                        $('.dropdown-toggle').not( $(this).find('.dropdown-toggle') ).next( '.children, .sub-menu' ).removeClass( 'toggled-on' );
-//
-//                    
-//                        var _this = $(this);
-//			e.preventDefault();
-//			_this.find('.dropdown-toggle').addClass( 'toggle-on' );
-//			_this.find('.dropdown-toggle').next( '.children, .sub-menu' ).addClass( 'toggled-on' );
-//			_this.find('.dropdown-toggle').attr( 'aria-expanded', _this.find('.dropdown-toggle').attr( 'aria-expanded' ) === 'false' ? 'true' : 'false' );
-//			_this.find('.dropdown-toggle').html( _this.find('.dropdown-toggle').html() === screenReaderText.expand ? screenReaderText.collapse : screenReaderText.expand );                     
-//		} );
 	}
 	initMainNavigation( $( '.main-navigation' ) );
 
@@ -158,7 +158,7 @@
         $(document).click(function(e) {
             var target = e.target;
 
-            if (!$(target).is('.menu-primary-container li') && !$(target).is('.menu-primary-container button')) {
+            if (!$(target).is('.menu-primary-container li') && !$(target).is('.menu-primary-container button')  && !$(target).is('.menu-primary-container a')) {
                 $('.dropdown-toggle').removeClass( 'toggle-on' );
                 $('.dropdown-toggle').next( '.children, .sub-menu' ).removeClass( 'toggled-on' );
             }
