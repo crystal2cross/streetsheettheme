@@ -1,1 +1,1 @@
-A custom WordPress theme for Street Sheet (http://www.streetsheet.org/), a publication of the Coalition on Homelessness (http://www.cohsf.org/).
+A custom WordPress theme for Street Sheet (http://www.streetsheet.org/).
