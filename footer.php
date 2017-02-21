@@ -48,6 +48,7 @@
                     <p>
                         <a href="https://www.facebook.com/streetsheetsf/ " target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
                         <a href="https://twitter.com/TheCoalitionSF" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/coalitiononhomelessness/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
                     </p>
                 </div>
                 <hr>
